@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 import Home from './components/Home'
 import Nav from './components/Nav'
+import NavTop from './components/NavTop'
 import About from './components/About'
 import Projects from './components/Projects'
 import Experience from './components/Experience'
@@ -13,6 +14,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <Nav />
+      <NavTop />
       <Switch>
         <Route exact path="/">
           <Home />
