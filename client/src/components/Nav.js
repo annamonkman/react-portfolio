@@ -9,27 +9,22 @@ const Nav = () => {
       <div className="nav-links-container">
         <div className="nav-link-indv-div">
           <Link to="/">
-            Home
+            Home,
           </Link>
         </div>
-        <div className="nav-link-div">
+        <div className="nav-link-indv-div">
           <Link to="/about">
-            About
+            About,
           </Link>
         </div>
-        <div className="nav-link-div">
+        <div className="nav-link-indv-div">
           <Link to="/projects">
-            Projects
+            Projects,
           </Link>
         </div>
-        <div className="nav-link-div">
+        <div className="nav-link-indv-div">
           <Link to="/art">
-            Art
-          </Link>
-        </div>
-        <div className="nav-link-div">
-          <Link to="/contact">
-            Contact
+            Art,
           </Link>
         </div>
       </div>
