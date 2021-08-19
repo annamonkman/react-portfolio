@@ -1,21 +1,26 @@
 import React from 'react'
+import FadeIn from 'react-fade-in'
 
 const Art = () => {
   return (
     <div>
       <div className="dot-main">
-        <div className="content-about">
-          <h2>Art</h2>
-          <div className="art-gallery">
-            <div className="art-pic"></div>
-            <div className="art-pic"></div>
-            <div className="art-pic"></div>
-            <div className="art-pic"></div>
-            <div className="art-pic"></div>
-            <div className="art-pic"></div>
-          </div>
-          
+
+        <div className="content-art">
+
+          <FadeIn delay={300}>
+
+            <h2>Art</h2>
+            <div className="art-gallery">
+              <FadeIn delay={300}>
+                <div className="art-pic"></div>
+                <div className="art-pic"></div>
+              </FadeIn>
+            </div>
+          </FadeIn>
         </div>
+      
+
         <div className="dot1"></div>
         <div className="dot2"></div>
         <div className="dot3"></div>
@@ -35,6 +40,7 @@ const Art = () => {
         <div className="dot17"></div>
         <div className="dot18"></div>
         <div className="footer"></div>
+        
       </div>
     </div>
   )

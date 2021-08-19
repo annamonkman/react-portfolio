@@ -4,8 +4,8 @@ const Home = () => {
 
 
   return (
-    <div>
-      <div className="dot-main">
+    <div className="home-container">
+      <div className="dot-home">
         <div className="dot1"></div>
         <div className="dot2"></div>
         <div className="dot3"></div>
