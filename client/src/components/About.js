@@ -1,33 +1,55 @@
 import React from 'react'
-import FadeIn from 'react-fade-in'
+import { Fade } from 'react-reveal'
+// import Reveal from 'react-reveal/Reveal'
 
 const About = () => {
   return (
     <div>
       <div className="dot-about">
         <div className="content-about">
-          <FadeIn delay={300}>
+          <Fade top>
             <div className="bio-wrapper">
-              <FadeIn delay={300}>
-                <p>I am a creative and perceptive junior web developer with a background in the Visual Arts who has recently completed a Software Engineering Bootcamp at General Assembly.</p>
-                <p>I graduated from a BA Fine Art Degree with First Class Honours in 2019. During my studies I specialised in using digital filmmaking and animation software. I enjoy the process of developing a visual and conceptual outcome using aesthetic decision-making, technical skills and problem solving.  Learning to code was top of my list of skills to develop after graduating, as it is a skill that enables many avenues for creation and innovation.</p>
-                <p>Additionally I have a long term fascination with the internet from a social and cultural point of view and am excited to be a part of its evolution.</p>
-                <p>Having greatly enjoyed the learning and collaborative aspects of the Software Engineering Bootcamp at General Assembly, I am excited to enter the world of tech on a professional level. I hope to continue to learn and be challenged as well as bring my creativity and eye for detail to any team I join.</p>
-              </FadeIn>
-              
+              <p>I am a creative and perceptive junior web developer with a background in the Visual Arts who has recently completed a Software Engineering Bootcamp at General Assembly.</p>
+              <p>I graduated from a BA Fine Art Degree with First Class Honours in 2019. During my studies I specialised in using digital filmmaking and animation software. I enjoy the process of developing a visual and conceptual outcome using aesthetic decision-making, technical skills and problem solving.  Learning to code was top of my list of skills to develop after graduating, as it is a skill that enables many avenues for creation and innovation.</p>
             </div>
-
+          </Fade>
+          
+          
+          <Fade top>
             <div className="skills-wrapper">
-              <FadeIn delay={300}>
-                <p>HTML5, CSS, JavaScript, SASS, React (Hooks), Bulma, Semantic React UI</p>
-                <p>Node.js, MongoDB, Mongoose, Express, Python, Django, PostgreSQL, TablePlus, Insomnia, RESTful APIS</p>
-                <p>Yarn, Npm, Pip, Pipenv</p>
-                <p>Git, GitHub, Insomnia, VS Code, TablePlus, Cloudinary, Mapbox, Netlify, Heroku</p>
-                <p>Adobe Photoshop, Adobe Premiere, Blender, Unreal Engine</p>
-              </FadeIn>
-              
+              <p>HTML5, CSS, JavaScript, SASS, React (Hooks), Bulma, Semantic React UI</p>
+              <p>Node.js, MongoDB, Mongoose, Express, Python, Django, PostgreSQL, TablePlus, Insomnia, RESTful APIS</p>
+              <p>Yarn, Npm, Pip, Pipenv</p>
+              <p>Git, GitHub, Insomnia, VS Code, TablePlus, Cloudinary, Mapbox, Netlify, Heroku</p>
+              <p>Adobe Photoshop, Adobe Premiere, Blender, Unreal Engine</p>
             </div>
-          </FadeIn>
+          </Fade>
+
+          <Fade top>
+            <div className="experience-wrapper">
+              <div className="experience-title">
+                <h2>Experience</h2>
+              </div>
+              <div className="experience-text">
+                <div className="experience-indv">
+                  <p>Waitrose, Supermarket assistant</p>
+                  <p>One of Us</p>
+                  <p>Goldsmiths</p>
+                </div>
+              </div>
+            </div>
+          </Fade>
+
+          <Fade top>
+            <div className="education-wrapper">
+            </div>
+          </Fade>
+
+          <Fade top>
+            <div className="interests-wrapper">
+              <p>I like fashion, photography, design, cooking new dishes, contemporary art, film, and the crossovers of all of these. </p>
+            </div>
+          </Fade>
           
 
         </div>

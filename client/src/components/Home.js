@@ -28,7 +28,7 @@ const Home = () => {
 
       <div className="home-info">
         <div className="home-info-text">
-          <p>I am Anna Monkman, a junior web developer based in London and Surrey. Welcome to my portfolio site :)</p>
+          <p>I am Anna Monkman, a junior web developer based in London and Surrey. Welcome to my portfolio site</p>
         </div>
         <div className="home-info-links">
           <p>&gt; LinkedIn</p>

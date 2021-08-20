@@ -1,5 +1,5 @@
 import React from 'react'
-import FadeIn from 'react-fade-in'
+import { Fade } from 'react-reveal'
 
 const Art = () => {
   return (
@@ -8,16 +8,84 @@ const Art = () => {
 
         <div className="content-art">
 
-          <FadeIn delay={300}>
-
-            <h2>Art</h2>
-            <div className="art-gallery">
-              <FadeIn delay={300}>
-                <div className="art-pic"></div>
-                <div className="art-pic"></div>
-              </FadeIn>
-            </div>
-          </FadeIn>
+          <h2>Art</h2>
+          <div className="art-gallery">
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+            <Fade top>
+              <div className="art-pic"></div>
+            </Fade>
+          </div>
         </div>
       
 
