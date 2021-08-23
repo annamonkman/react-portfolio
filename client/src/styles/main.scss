@@ -274,8 +274,9 @@ progress {
 
 /** -----------------------------------------------------------------------VARIABLES*/
 
+$nav-blue1: #66d9ff;
 $nav-blue: #66d9ff;
-$nav-grey: #ffd79b;
+$nav-grey: #ebebcb;
 
 /** -----------------------------------------------------------------------MAIN*/
 a {
@@ -287,10 +288,21 @@ a {
   font-family: sans-serif;
 }
 
+body {
+  background-color: rgb(240, 230, 230);
+}
+
 /** -----------------------------------------------------------------------NAV*/
 
-.nav-container {
+.nav-container-blue {
   background-color: $nav-blue;
+  height: 50px;
+  margin-top: 0;
+  // border: 1px solid red;
+}
+
+.nav-container-red {
+  background-color: red;
   height: 50px;
   margin-top: 0;
   // border: 1px solid red;
@@ -310,6 +322,16 @@ a {
   margin-left: 5px;
 }
 
+.nav-link-logo-div {
+  margin-right: 8px;
+  margin-top: 5px;
+  margin-left: 5px;
+  color: $nav-blue;
+  text-shadow: -1px -1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(54, 119, 156);
+  font-family:'Times New Roman', Times, serif;
+  
+}
+
 /** -----------------------------------------------------------------------DOTS HOME*/
 .dot-home {
   height: 170px;
@@ -318,98 +340,98 @@ a {
 
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
     /* border: 1px solid green; */
-    height: 9px;
+    height: 7px;
   }
 
   .dot1 {
-    background-image: radial-gradient($nav-blue 90%, transparent 90%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 85%, transparent 90%);
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
   }
   .dot2 {
-    background-image: radial-gradient($nav-blue 85%, transparent 90%);
+    background-image: radial-gradient($nav-blue 80%, transparent 90%);
     background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot3 {
-    background-image: radial-gradient($nav-blue 80%, transparent 90%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 75%, transparent 90%);
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
   }
   .dot4 {
-    background-image: radial-gradient($nav-blue 75%, transparent 85%);
+    background-image: radial-gradient($nav-blue 70%, transparent 85%);
     background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot5 {
-    background-image: radial-gradient($nav-blue 70%, transparent 85%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 65%, transparent 85%);
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
   }
   .dot6 {
-    background-image: radial-gradient($nav-blue 65%, transparent 80%);
+    background-image: radial-gradient($nav-blue 60%, transparent 80%);
     background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot7 {
-    background-image: radial-gradient($nav-blue 60%, transparent 80%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 55%, transparent 80%);
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
   }
   .dot8 {
-    background-image: radial-gradient($nav-blue 55%, transparent 75%);
+    background-image: radial-gradient($nav-blue 50%, transparent 75%);
     background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot9 {
-    background-image: radial-gradient($nav-blue 50%, transparent 70%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 45%, transparent 70%);
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
   }
   .dot10 {
-    background-image: radial-gradient($nav-blue 45%, transparent 70%);
+    background-image: radial-gradient($nav-blue 40%, transparent 65%);
     background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot11 {
-    background-image: radial-gradient($nav-blue 40%, transparent 65%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 35%, transparent 60%);
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
   }
   .dot12 {
-    background-image: radial-gradient($nav-blue 35%, transparent 65%);
+    background-image: radial-gradient($nav-blue 30%, transparent 60%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot13 {
-    background-image: radial-gradient($nav-blue 30%, transparent 60%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 25%, transparent 55%);
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
   }
   .dot14 {
-    background-image: radial-gradient($nav-blue 25%, transparent 55%);
+    background-image: radial-gradient($nav-blue 20%, transparent 50%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot15 {
-    background-image: radial-gradient($nav-blue 20%, transparent 50%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 15%, transparent 45%);
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
   }
   .dot16 {
-    background-image: radial-gradient($nav-blue 15%, transparent 45%);
+    background-image: radial-gradient($nav-blue 10%, transparent 40%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
   .dot17 {
-    background-image: radial-gradient($nav-blue 10%, transparent 40%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-image: radial-gradient($nav-blue 5%, transparent 35%);
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
   }
   .dot18 {
-    background-image: radial-gradient($nav-blue 5%, transparent 40%);
+    background-image: radial-gradient($nav-blue 2%, transparent 30%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
+    background-size: 10px 10px;
   }
 
 /** -----------------------------------------------------------------------HOME*/
@@ -453,7 +475,7 @@ a {
   }
 
   .content-art {
-    background-color: $nav-blue;
+    background-color: rgb(102, 102, 102);
     margin: 0;
     padding: 20px;
   }
@@ -568,25 +590,55 @@ a {
 
   .content-about {
     background-color: $nav-grey;
-    margin: 0;
-    padding: 20px;
-  }
-  .content-about p {
-    margin: 0;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid red;
   }
 
   .bio-wrapper {
-    // border: 1px solid red;
-    padding: 20px;
-  }
-  .bio-wrapper p {
-    margin: 15px;
+    border: 1px solid red;
+    max-width: 800px;
+    margin: 0 auto;
   }
 
+  .experience-wrapper {
+    border: 1px solid red;
+    padding: 20px;
+  }
+  .experience-title {
+    border: 1px solid green;
+  }
+  .experience-list {
+    border: 1px solid green;
+  }
+  .experience-indv {
+    border: 1px solid magenta;
+  }
+
+    /** ---------------------------------------------------------------About --> skills*/
+
   .skills-wrapper {
-    // border: 1px solid red;
+    padding: 40px;
+    border: 1px solid red;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  .frontend-wrapper {
+    border: 1px solid green;
+    display: flex;
+    justify-content: space-between;
+  }
+  .skill-indv-wrapper {
+    border: 1px solid magenta;
+    display: flex;
+    flex-direction: column;
+    max-width: 80px;
+  }
+  .skill-indv-img {
+    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     padding: 40px;
   }
-  .skills-wrapper p {
-    margin: 15px;
+  .skill-indv-title {
+    border: 1px solid black;
+    padding: 10px;
   }

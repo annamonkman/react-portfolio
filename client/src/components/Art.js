@@ -7,85 +7,45 @@ const Art = () => {
       <div className="dot-main">
 
         <div className="content-art">
+          
+          <Fade top>
+            <div className="art-proj">
+              <div className="art-pic"></div>
+              <div className="art-description">
+                <p>Commission bed for artist christoper bond - 3 screen shots . made using blender version.. , mega scans, </p>
+              </div>
+            </div>
+          </Fade>
+          
 
-          <h2>Art</h2>
-          <div className="art-gallery">
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
-            <Fade top>
-              <div className="art-pic"></div>
-            </Fade>
+          <div className="art-proj">
+            <div className="art-pic"></div>
+            <div className="art-description">
+              <p>degree show 2019 - installation and screenshots from films</p>
+            </div>
           </div>
+
+          <div className="art-proj">
+            <div className="art-pic"></div>
+            <div className="art-description">
+              <p>the line -screenshots from film</p>
+            </div>
+          </div>
+
+          <div className="art-proj">
+            <div className="art-pic"></div>
+            <div className="art-description">
+              <p>the knight  - screenshots from film</p>
+            </div>
+          </div>
+
+          <div className="art-proj">
+            <div className="art-pic"></div>
+            <div className="art-description">
+              <p>drawing etc</p>
+            </div>
+          </div>
+
         </div>
       
 
