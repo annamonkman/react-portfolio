@@ -600,6 +600,31 @@ body {
     max-width: 800px;
     margin: 0 auto;
   }
+  .bio-p-1, .bio-p-2, .bio-p-3 {
+    border: 1px solid green;
+    max-width: 80%;
+  }
+  .bio-p-1 {
+    margin-left: 10px;
+  }
+  .bio-p-2 {
+    margin-left: 50px;
+  }
+  .bio-p-3 {
+    margin-left: 100px;
+  }
+
+  .interests-wrapper {
+    border: 1px solid red;
+  }
+  .interests-title {
+    border: 1px solid red;
+  }
+  .interests-text {
+    border: 1px solid red;
+  }
+
+  /** ---------------------------------------------------------About--experience*/
 
   .experience-wrapper {
     border: 1px solid red;
@@ -614,11 +639,22 @@ body {
   .experience-indv {
     border: 1px solid magenta;
   }
+  .ex-position {
+    border: 1px solid green;
+  }
+  .ex-company {
+    border: 1px solid green;
+    margin-left: 20px;
+  }
+  .ex-dates {
+    border: 1px solid green;
+    margin-left: 20px;
+  }
 
-    /** ---------------------------------------------------------------About --> skills*/
+    /** ---------------------------------------------------------About--skills*/
 
   .skills-wrapper {
-    padding: 40px;
+    padding: 20px;
     border: 1px solid red;
     max-width: 800px;
     margin: 0 auto;
@@ -626,19 +662,57 @@ body {
   .frontend-wrapper {
     border: 1px solid green;
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    margin: 0 auto;
   }
   .skill-indv-wrapper {
     border: 1px solid magenta;
     display: flex;
     flex-direction: column;
-    max-width: 80px;
+    justify-content: space-around;
+    max-width: 70px;
+    margin: 5px;
   }
   .skill-indv-img {
     background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    padding: 40px;
+    padding: 30px;
   }
   .skill-indv-title {
     border: 1px solid black;
     padding: 10px;
+    font-size: 14px;
   }
+
+  /** --------------------------------------------------------------------PROJECTS*/
+
+  .project-indv-wrapper {
+    border: 1px solid magenta;
+    width: 600px;
+    margin: 0 auto;
+  }
+  .project-img {
+    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    padding: 200px;
+  }
+.project-indv-title {
+  border: 1px solid green;
+}
+.project-indv-links {
+  border: 1px solid green;
+}
+.project-indv-info {
+  border: 1px solid yellowgreen;
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+}
+.project-indv-description {
+  border: 1px solid red;
+  display: inline-block;
+}
+.project-indv-tech {
+  border: 1px solid blue;
+  display: inline-block;
+}
