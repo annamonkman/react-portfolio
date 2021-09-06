@@ -192,15 +192,15 @@ const About = () => {
               <div className="frontend-wrapper">
                 
                 <div className="skill-indv-wrapper">
-                  <div className="skill-indv-img"></div>
+                  <i className="skill-indv-img"></i>
                   <div className="skill-indv-title">Adobe Photoshop</div>
                 </div>
                 <div className="skill-indv-wrapper">
-                  <div className="skill-indv-img"></div>
+                  <i className="skill-indv-img"></i>
                   <div className="skill-indv-title">Adobe Premiere</div>
                 </div>
                 <div className="skill-indv-wrapper">
-                  <div className="skill-indv-img"></div>
+                  <i className="skill-indv-img"></i>
                   <div className="skill-indv-title">Blender</div>
                 </div>
                 <div className="skill-indv-wrapper">

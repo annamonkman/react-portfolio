@@ -8,7 +8,7 @@
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
 
- html {
+html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -275,8 +275,11 @@ progress {
 /** -----------------------------------------------------------------------VARIABLES*/
 
 $nav-blue1: #66d9ff;
-$nav-blue: #66d9ff;
+$nav-blue: #f2efebc6;
 $nav-grey: #ebebcb;
+// $nav-blue: #66d9ff;
+
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&display=swap');
 
 /** -----------------------------------------------------------------------MAIN*/
 a {
@@ -285,18 +288,18 @@ a {
 }
 
 * {
-  font-family: sans-serif;
+  font-family: 'Karla';
 }
 
 body {
-  background-color: rgb(240, 230, 230);
+  background-color: rgb(219, 217, 220);
 }
 
 /** -----------------------------------------------------------------------NAV*/
 
 .nav-container-blue {
   background-color: $nav-blue;
-  height: 50px;
+  height: 10px;
   margin-top: 0;
   // border: 1px solid red;
 }
