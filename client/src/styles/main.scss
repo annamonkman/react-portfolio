@@ -275,9 +275,9 @@ progress {
 /** -----------------------------------------------------------------------VARIABLES*/
 
 $nav-blue1: #66d9ff;
-$nav-blue: #f2efebc6;
+// $nav-blue: #f2efebc6;
 $nav-grey: #ebebcb;
-// $nav-blue: #66d9ff;
+$nav-blue: #66d9ff;
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&display=swap');
 
@@ -287,21 +287,22 @@ a {
   color: black;
 }
 
-* {
-  font-family: 'Karla';
-}
-
 body {
-  background-color: rgb(219, 217, 220);
+  background-color: rgb(230, 233, 235);
 }
 
 /** -----------------------------------------------------------------------NAV*/
 
 .nav-container-blue {
   background-color: $nav-blue;
-  height: 10px;
+  height: 30px;
   margin-top: 0;
   // border: 1px solid red;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
 }
 
 .nav-container-red {
@@ -318,22 +319,29 @@ body {
   font-size: 30px;
 }
 
-.nav-link-indv-div {
+.nav-link-indv-div, .nav-link-logo-div {
   // border: 1px solid red;
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
+  font-family:'Karla';
 }
 
-.nav-link-logo-div {
-  margin-right: 8px;
-  margin-top: 5px;
-  margin-left: 5px;
-  color: $nav-blue;
-  text-shadow: -1px -1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(54, 119, 156);
-  font-family:'Times New Roman', Times, serif;
-  
-}
+// .nav-link-logo-div {
+//   margin-right: 8px;
+//   margin-top: 5px;
+//   margin-left: 5px;
+//   color: $nav-blue;
+//   text-shadow: -1px -1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(54, 119, 156);
+//   font-family:'Times New Roman', Times, serif;
+// }
+
+// ? For Safari dots 
+// ? .dot13 {
+//  ? background-image: radial-gradient($nav-blue 25%, rgba(255, 255, 255, 0));
+//  ? background-position: 5px, 0px, 0px, 0px;
+//  ? background-size: 10px 10px;
+// ? }
 
 /** -----------------------------------------------------------------------DOTS HOME*/
 .dot-home {
@@ -382,7 +390,7 @@ body {
     background-size: 10px 10px;
   }
   .dot8 {
-    background-image: radial-gradient($nav-blue 50%, transparent 75%);
+    background-image: radial-gradient($nav-blue 50%, transparent 74%);
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
@@ -439,17 +447,18 @@ body {
 
 /** -----------------------------------------------------------------------HOME*/
   .home-info {
-    font-family: sans-serif;
     // border: 1px solid red;
     margin: 0 auto;
     max-width: 800px;
     padding: 0 60px 0 60px;
+    font-family: 'Karla';
+    // text-transform: uppercase;
   }
   .home-info-text {
     // border: 1px solid red;
     margin: 0 auto;
     max-width: 800px;
-    font-size: 30px;
+    font-size: 40px;
   }
   .home-info-links {
     // border: 1px solid red;
@@ -478,7 +487,7 @@ body {
   }
 
   .content-art {
-    background-color: rgb(102, 102, 102);
+    // background-color: rgb(102, 102, 102);
     margin: 0;
     padding: 20px;
   }
@@ -487,115 +496,14 @@ body {
   }
 
 
-  /** -----------------------------------------------------------------------DOTS ABOUT*/
-.dot-about {
-  height: 200px;
-}
-
-.dot-about-1, .dot-about-2, .dot-about-3, .dot-about-4, .dot-about-5, .dot-about-6, .dot-about-7, .dot-about-8, .dot-about-9, .dot-about-10, .dot-about-11, .dot-about-12, .dot-about-13, .dot-about-14, .dot-about-15, .dot-about-16, .dot-about-17, .dot-about-18 {
-    /* border: 1px solid green; */
-    height: 9px;
-  }
-
-  .dot-about-1 {
-    background-image: radial-gradient($nav-grey 90%, transparent 90%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-2 {
-    background-image: radial-gradient($nav-grey 85%, transparent 90%);
-    background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-3 {
-    background-image: radial-gradient($nav-grey 80%, transparent 90%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-4 {
-    background-image: radial-gradient($nav-grey 75%, transparent 85%);
-    background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-5 {
-    background-image: radial-gradient($nav-grey 70%, transparent 85%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-6 {
-    background-image: radial-gradient($nav-grey 65%, transparent 80%);
-    background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-7 {
-    background-image: radial-gradient($nav-grey 60%, transparent 80%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-8 {
-    background-image: radial-gradient($nav-grey 55%, transparent 75%);
-    background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-9 {
-    background-image: radial-gradient($nav-grey 50%, transparent 70%);
-    background-position: 6px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-10 {
-    background-image: radial-gradient($nav-grey 45%, transparent 70%);
-    background-position: 0px, 0, 0px 0;
-    background-size: 12px 12px;
-  }
-  .dot-about-11 {
-    background-image: radial-gradient($nav-grey 40%, transparent 65%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-12 {
-    background-image: radial-gradient($nav-grey 35%, transparent 65%);
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-13 {
-    background-image: radial-gradient($nav-grey 30%, transparent 60%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-14 {
-    background-image: radial-gradient($nav-grey 25%, transparent 55%);
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-15 {
-    background-image: radial-gradient($nav-grey 20%, transparent 50%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-16 {
-    background-image: radial-gradient($nav-grey 15%, transparent 45%);
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-17 {
-    background-image: radial-gradient($nav-grey 10%, transparent 40%);
-    background-position: 6px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-  .dot-about-18 {
-    background-image: radial-gradient($nav-grey 5%, transparent 40%);
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 12px 12px;
-  }
-
-
   /** -----------------------------------------------------------------------ABOUT*/
 
   .content-about {
-    background-color: $nav-grey;
+    // background-color: $nav-grey;
     margin: 0 auto;
     padding: 30px;
-    border: 1px solid red;
+    // border: 1px solid red;
+    font-family: 'Karla';
   }
 
   .bio-wrapper {
@@ -719,3 +627,100 @@ body {
   border: 1px solid blue;
   display: inline-block;
 }
+
+
+
+
+@media not all and (min-resolution:.001dpcm)
+{ @supports (-webkit-appearance:none) and (stroke-color:transparent) {
+  .dot1 {
+    background-image: radial-gradient($nav-blue 85%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot2 {
+    background-image: radial-gradient($nav-blue 80%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot3 {
+    background-image: radial-gradient($nav-blue 75%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot4 {
+    background-image: radial-gradient($nav-blue 70%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot5 {
+    background-image: radial-gradient($nav-blue 65%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot6 {
+    background-image: radial-gradient($nav-blue 60%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot7 {
+    background-image: radial-gradient($nav-blue 55%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot8 {
+    background-image: radial-gradient($nav-blue 54%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot9 {
+    background-image: radial-gradient($nav-blue 45%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot10 {
+    background-image: radial-gradient($nav-blue 40%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0, 0px 0;
+    background-size: 10px 10px;
+  }
+  .dot11 {
+    background-image: radial-gradient($nav-blue 35%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot12 {
+    background-image: radial-gradient($nav-blue 30%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot13 {
+    background-image: radial-gradient($nav-blue 25%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot14 {
+    background-image: radial-gradient($nav-blue 20%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot15 {
+    background-image: radial-gradient($nav-blue 15%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot16 {
+    background-image: radial-gradient($nav-blue 10%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot17 {
+    background-image: radial-gradient($nav-blue 5%, rgba(255, 255, 255, 0));
+    background-position: 5px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+  .dot18 {
+    background-image: radial-gradient($nav-blue 2%, rgba(255, 255, 255, 0));
+    background-position: 0px, 0px, 0px, 0px;
+    background-size: 10px 10px;
+  }
+}}
