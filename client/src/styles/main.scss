@@ -272,14 +272,25 @@ progress {
   font: inherit; /* 2 */
 }
 
+
 /** -----------------------------------------------------------------------VARIABLES*/
 
-$nav-blue1: #66d9ff;
-// $nav-blue: #f2efebc6;
-$nav-grey: #ebebcb;
+$nav: #eef09ce3;
+$nav-red: #ffb9b9e3;
+$nav-yellow: #ffd86ede;
 $nav-blue: #66d9ff;
+$nav-grey: #cccccce3;
+$nav-light: #ffffffe3;
+$nav-green: #ffffffe3;
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lora&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&family=Lato&family=Lora&family=Roboto&display=swap');
+@import url('https://api.fontshare.com/css?f[]=segment@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&family=Lato&family=Merriweather&display=swap');
 
 /** -----------------------------------------------------------------------MAIN*/
 a {
@@ -290,11 +301,13 @@ a {
 body {
   background-color: rgb(230, 233, 235);
 }
+// rgb(230, 233, 235)
+// grey rgb(173, 173, 173)
 
 /** -----------------------------------------------------------------------NAV*/
 
 .nav-container-blue {
-  background-color: $nav-blue;
+  background-color: $nav;
   height: 30px;
   margin-top: 0;
   // border: 1px solid red;
@@ -324,125 +337,98 @@ body {
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
-  font-family:'Karla';
+  font-family:'Segment', sans-serif;
 }
 
 // .nav-link-logo-div {
 //   margin-right: 8px;
 //   margin-top: 5px;
 //   margin-left: 5px;
-//   color: $nav-blue;
+//   color: $nav;
 //   text-shadow: -1px -1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(54, 119, 156);
 //   font-family:'Times New Roman', Times, serif;
 // }
 
-// ? For Safari dots 
-// ? .dot13 {
-//  ? background-image: radial-gradient($nav-blue 25%, rgba(255, 255, 255, 0));
-//  ? background-position: 5px, 0px, 0px, 0px;
-//  ? background-size: 10px 10px;
-// ? }
 
-/** -----------------------------------------------------------------------DOTS HOME*/
-.dot-home {
-  height: 170px;
-  // border: 1px solid red;
-}
+/** -----------------------------------------------------------------------DOTS NAV*/
 
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
     /* border: 1px solid green; */
     height: 7px;
+    background-size: 10px 10px;
   }
 
   .dot1 {
-    background-image: radial-gradient($nav-blue 85%, transparent 90%);
+    background-image: radial-gradient($nav 85%, transparent 90%);
     background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot2 {
-    background-image: radial-gradient($nav-blue 80%, transparent 90%);
+    background-image: radial-gradient($nav 80%, transparent 90%);
     background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot3 {
-    background-image: radial-gradient($nav-blue 75%, transparent 90%);
+    background-image: radial-gradient($nav 75%, transparent 90%);
     background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot4 {
-    background-image: radial-gradient($nav-blue 70%, transparent 85%);
+    background-image: radial-gradient($nav 70%, transparent 85%);
     background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot5 {
-    background-image: radial-gradient($nav-blue 65%, transparent 85%);
+    background-image: radial-gradient($nav 65%, transparent 85%);
     background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot6 {
-    background-image: radial-gradient($nav-blue 60%, transparent 80%);
+    background-image: radial-gradient($nav 60%, transparent 80%);
     background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot7 {
-    background-image: radial-gradient($nav-blue 55%, transparent 80%);
+    background-image: radial-gradient($nav 55%, transparent 80%);
     background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot8 {
-    background-image: radial-gradient($nav-blue 50%, transparent 74%);
+    background-image: radial-gradient($nav 50%, transparent 74%);
     background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot9 {
-    background-image: radial-gradient($nav-blue 45%, transparent 70%);
+    background-image: radial-gradient($nav 45%, transparent 70%);
     background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot10 {
-    background-image: radial-gradient($nav-blue 40%, transparent 65%);
+    background-image: radial-gradient($nav 40%, transparent 65%);
     background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
   }
   .dot11 {
-    background-image: radial-gradient($nav-blue 35%, transparent 60%);
+    background-image: radial-gradient($nav 35%, transparent 60%);
     background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot12 {
-    background-image: radial-gradient($nav-blue 30%, transparent 60%);
+    background-image: radial-gradient($nav 30%, transparent 60%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot13 {
-    background-image: radial-gradient($nav-blue 25%, transparent 55%);
+    background-image: radial-gradient($nav 25%, transparent 55%);
     background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot14 {
-    background-image: radial-gradient($nav-blue 20%, transparent 50%);
+    background-image: radial-gradient($nav 20%, transparent 50%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot15 {
-    background-image: radial-gradient($nav-blue 15%, transparent 45%);
+    background-image: radial-gradient($nav 15%, transparent 45%);
     background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot16 {
-    background-image: radial-gradient($nav-blue 10%, transparent 40%);
+    background-image: radial-gradient($nav 10%, transparent 40%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot17 {
-    background-image: radial-gradient($nav-blue 5%, transparent 35%);
+    background-image: radial-gradient($nav 5%, transparent 35%);
     background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
   .dot18 {
-    background-image: radial-gradient($nav-blue 2%, transparent 30%);
+    background-image: radial-gradient($nav 2%, transparent 30%);
     background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
   }
 
 /** -----------------------------------------------------------------------HOME*/
@@ -451,50 +437,44 @@ body {
     margin: 0 auto;
     max-width: 800px;
     padding: 0 60px 0 60px;
-    font-family: 'Karla';
+    font-family: 'Karla', sans-serif;
     // text-transform: uppercase;
   }
   .home-info-text {
     // border: 1px solid red;
     margin: 0 auto;
     max-width: 800px;
-    font-size: 40px;
+    font-size: 30px;
   }
   .home-info-links {
     // border: 1px solid red;
-    max-width: 800px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .home-link-indv {
+    // border: 1px solid red;
+    display: inline-block;
+    margin-right: 50px;
     font-size: 20px;
   }
-
-
-  /** -----------------------------------------------------------------------FOOTER*/
-
-  .footer {
-    padding: 30px;
-  }
-
-  /** -----------------------------------------------------------------------ART*/
-
-  .art-gallery {
-
-  }
-  .art-pic {
-    padding-top: 200px;
-    padding-left: 300px;
-    margin: 20px;
+  .link-icon {
+    font-family: 'EB Garamond', serif;
     display: inline-block;
-    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+    // border: 1px solid red;
+    margin-right: 20px;
+    animation-name: pointer;
+    animation-duration: 0.4s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
   }
-
-  .content-art {
-    // background-color: rgb(102, 102, 102);
-    margin: 0;
-    padding: 20px;
+  @keyframes pointer {
+    0% {transform: translateX(0px);}
+    100% {transform: translateX(15px);}
   }
-  .content-art p {
-    margin: 0;
-  }
-
 
   /** -----------------------------------------------------------------------ABOUT*/
 
@@ -503,26 +483,30 @@ body {
     margin: 0 auto;
     padding: 30px;
     // border: 1px solid red;
-    font-family: 'Karla';
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
   }
 
   .bio-wrapper {
-    border: 1px solid red;
-    max-width: 800px;
+    // border: 1px solid red;
+    max-width: 80%;
     margin: 0 auto;
   }
-  .bio-p-1, .bio-p-2, .bio-p-3 {
-    border: 1px solid green;
+  .bio-p-1, .bio-p-2, .bio-p-3, .bio-p-4 {
+    // border: 1px solid green;
     max-width: 80%;
   }
   .bio-p-1 {
     margin-left: 10px;
   }
   .bio-p-2 {
-    margin-left: 50px;
+    margin-left: 40px;
   }
   .bio-p-3 {
-    margin-left: 100px;
+    margin-left: 10px;
+  }
+  .bio-p-4 {
+    margin-left: 70px;
   }
 
   .interests-wrapper {
@@ -534,6 +518,48 @@ body {
   .interests-text {
     border: 1px solid red;
   }
+
+
+      /** ---------------------------------------------------------About--skills*/
+
+      .skills-wrapper {
+        padding: 20px;
+        border: 1px solid red;
+        max-width: 800px;
+        margin: 0 auto;
+        font-family: 'Karla', serif;
+      }
+      .frontend-wrapper {
+        border: 1px solid green;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 600px;
+        margin: 0 auto;
+      }
+      .skills-title {
+        border: 1px solid magenta;
+        display: inline-block;
+        transform: rotate(-20deg);
+      }
+      .skill-indv-wrapper {
+        border: 1px solid magenta;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        max-width: 70px;
+        margin: 5px;
+      }
+      .skill-indv-img {
+        background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        padding: 30px;
+      }
+      .skill-indv-title {
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 14px;
+      }
+
 
   /** ---------------------------------------------------------About--experience*/
 
@@ -562,39 +588,7 @@ body {
     margin-left: 20px;
   }
 
-    /** ---------------------------------------------------------About--skills*/
 
-  .skills-wrapper {
-    padding: 20px;
-    border: 1px solid red;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  .frontend-wrapper {
-    border: 1px solid green;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .skill-indv-wrapper {
-    border: 1px solid magenta;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    max-width: 70px;
-    margin: 5px;
-  }
-  .skill-indv-img {
-    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    padding: 30px;
-  }
-  .skill-indv-title {
-    border: 1px solid black;
-    padding: 10px;
-    font-size: 14px;
-  }
 
   /** --------------------------------------------------------------------PROJECTS*/
 
@@ -628,98 +622,121 @@ body {
   display: inline-block;
 }
 
+  /** -----------------------------------------------------------------------ART*/
 
+  .art-gallery {
+
+  }
+  .art-pic {
+    padding-top: 200px;
+    padding-left: 300px;
+    margin: 20px;
+    display: inline-block;
+    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  }
+
+  .content-art {
+    // background-color: rgb(102, 102, 102);
+    margin: 0;
+    padding: 20px;
+  }
+  .content-art p {
+    margin: 0;
+  }
+
+
+/** --------------------------------------------------------------------RESPONSIVE*/
 
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
   .dot1 {
-    background-image: radial-gradient($nav-blue 85%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 85%, rgba(255, 255, 255, 0));
     background-position: 5px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot2 {
-    background-image: radial-gradient($nav-blue 80%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 80%, rgba(255, 255, 255, 0));
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot3 {
-    background-image: radial-gradient($nav-blue 75%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 75%, rgba(255, 255, 255, 0));
     background-position: 5px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot4 {
-    background-image: radial-gradient($nav-blue 70%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 70%, rgba(255, 255, 255, 0));
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot5 {
-    background-image: radial-gradient($nav-blue 65%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 65%, rgba(255, 255, 255, 0));
     background-position: 5px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot6 {
-    background-image: radial-gradient($nav-blue 60%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 60%, rgba(255, 255, 255, 0));
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot7 {
-    background-image: radial-gradient($nav-blue 55%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 55%, rgba(255, 255, 255, 0));
     background-position: 5px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot8 {
-    background-image: radial-gradient($nav-blue 54%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 54%, rgba(255, 255, 255, 0));
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot9 {
-    background-image: radial-gradient($nav-blue 45%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 45%, rgba(255, 255, 255, 0));
     background-position: 5px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot10 {
-    background-image: radial-gradient($nav-blue 40%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 40%, rgba(255, 255, 255, 0));
     background-position: 0px, 0, 0px 0;
     background-size: 10px 10px;
   }
   .dot11 {
-    background-image: radial-gradient($nav-blue 35%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 35%, rgba(255, 255, 255, 0));
     background-position: 5px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot12 {
-    background-image: radial-gradient($nav-blue 30%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 30%, rgba(255, 255, 255, 0));
     background-position: 0px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot13 {
-    background-image: radial-gradient($nav-blue 25%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 25%, rgba(255, 255, 255, 0));
     background-position: 5px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot14 {
-    background-image: radial-gradient($nav-blue 20%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 20%, rgba(255, 255, 255, 0));
     background-position: 0px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot15 {
-    background-image: radial-gradient($nav-blue 15%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 15%, rgba(255, 255, 255, 0));
     background-position: 5px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot16 {
-    background-image: radial-gradient($nav-blue 10%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 10%, rgba(255, 255, 255, 0));
     background-position: 0px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot17 {
-    background-image: radial-gradient($nav-blue 5%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 5%, rgba(255, 255, 255, 0));
     background-position: 5px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }
   .dot18 {
-    background-image: radial-gradient($nav-blue 2%, rgba(255, 255, 255, 0));
+    background-image: radial-gradient($nav 2%, rgba(255, 255, 255, 0));
     background-position: 0px, 0px, 0px, 0px;
     background-size: 10px 10px;
   }

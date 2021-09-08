@@ -11,7 +11,7 @@ const About = () => {
         <div className="bio-wrapper">
 
           <div className="bio-p-1">
-            <p>Hi I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p>
+            <p>I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p>
           </div>
         
           <div className="bio-p-2">
@@ -19,7 +19,7 @@ const About = () => {
           </div>
         
           <div className="bio-p-3">
-            <p>My journey to code came after completing my Fine Art Degree in 2019. I had enjoyed experimenting with digital software such as Adobe Premiere, Photoshop and Blender to make films, and I wanted to expand my technical skills in another area. I completed a short web development course at Code First Girls and was inspired by the possibilities that were opened up with coding. </p>
+            <p>My journey to code came after completing my Fine Art Degree in 2019. I had enjoyed experimenting with digital software such as Adobe Premiere, Photoshop and Blender to make films, and I wanted to expand my technical skills in another area. I completed a short web development course with Code First Girls and was inspired by the possibilities that were opened up with coding. </p>
           </div>
 
           <div className="bio-p-4">
@@ -30,158 +30,135 @@ const About = () => {
       
       
         <div className="skills-wrapper">
-          <div className="skills-title"><h3>Skills</h3></div>
-          <div className="frontend-title">
-            <h4>Front end:</h4>
+
+          <div className="skills-title">
+            <h4>Skills:</h4>
           </div>
           <div className="frontend-wrapper">
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img html"></div>
               <div className="skill-indv-title">HTML5</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img css"></div>
               <div className="skill-indv-title">CSS</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img js"></div>
               <div className="skill-indv-title">JavaScript</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img sass"></div>
               <div className="skill-indv-title">SASS</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img react"></div>
               <div className="skill-indv-title">React (Hooks)</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img bulma"></div>
               <div className="skill-indv-title">Bulma</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img semantic"></div>
               <div className="skill-indv-title">Semantic React UI</div>
             </div>
-        
-          </div>
-          <div className="frontend-title">
-            <h4>Backend:</h4>
-          </div>
-          <div className="frontend-wrapper">
-            
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img node"></div>
               <div className="skill-indv-title">Node.JS</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img mongodb"></div>
               <div className="skill-indv-title">MongoDB</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img mongoose"></div>
               <div className="skill-indv-title">Mongoose</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img express"></div>
               <div className="skill-indv-title">Express</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img python"></div>
               <div className="skill-indv-title">Python</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img django"></div>
               <div className="skill-indv-title">Django</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img postgresql"></div>
               <div className="skill-indv-title">PostgreSQL</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img tableplus"></div>
               <div className="skill-indv-title">TablePlus</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img insomnia"></div>
               <div className="skill-indv-title">Insomnia</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img restful"></div>
               <div className="skill-indv-title">RESTful APIs</div>
             </div>
-        
-          </div>
-
-          <div className="frontend-title">
-            <h4>Packages:</h4>
-          </div>
-
-          <div className="frontend-wrapper">
-            
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img yarn"></div>
               <div className="skill-indv-title">Yarn</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img npm"></div>
               <div className="skill-indv-title">Npm</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img pip"></div>
               <div className="skill-indv-title">Pip</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img pipenv"></div>
               <div className="skill-indv-title">PipEnv</div>
             </div>
-            
-          </div>
-
-          <div className="frontend-title">
-            <h4>Tools:</h4>
-          </div>
-
-          <div className="frontend-wrapper">
-            
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img git"></div>
               <div className="skill-indv-title">Git</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img github"></div>
               <div className="skill-indv-title">GitHub</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img insomnia"></div>
               <div className="skill-indv-title">Insomnia</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img vscode"></div>
               <div className="skill-indv-title">VS Code</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img tableplus"></div>
               <div className="skill-indv-title">TablePlus</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img cloudinary"></div>
               <div className="skill-indv-title">Cloudinary</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img mapbox"></div>
               <div className="skill-indv-title">Mapbox</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img netlify"></div>
               <div className="skill-indv-title">Netlify</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img heroku"></div>
               <div className="skill-indv-title">Heroku</div>
             </div>
-            
+
           </div>
+
+
 
           <div className="frontend-title">
             <h4>Art & Design:</h4>
@@ -190,23 +167,23 @@ const About = () => {
           <div className="frontend-wrapper">
             
             <div className="skill-indv-wrapper">
-              <i className="skill-indv-img"></i>
+              <i className="skill-indv-img photoshop"></i>
               <div className="skill-indv-title">Adobe Photoshop</div>
             </div>
             <div className="skill-indv-wrapper">
-              <i className="skill-indv-img"></i>
+              <i className="skill-indv-img premiere"></i>
               <div className="skill-indv-title">Adobe Premiere</div>
             </div>
             <div className="skill-indv-wrapper">
-              <i className="skill-indv-img"></i>
+              <i className="skill-indv-img blender"></i>
               <div className="skill-indv-title">Blender</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img ue"></div>
               <div className="skill-indv-title">Unreal Engine</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img"></div>
+              <div className="skill-indv-img figma"></div>
               <div className="skill-indv-title">Figma</div>
             </div>
             
@@ -216,7 +193,7 @@ const About = () => {
 
         <div className="experience-wrapper">
           <div className="experience-title">
-            <h2>Experience & Education</h2>
+            <h2>Experience & Education please find more information about each role on LinkedIn</h2>
           </div>
           <div className="experience-list">
 
@@ -254,6 +231,11 @@ const About = () => {
           </div>
         </div>
         
+        <div className="site-credits">
+          <p>site designed and developed by Anna Monkman</p>
+          <p>using typefaces segment by .. and ...</p>
+          <p>React Hooks, animation .... by ...</p>
+        </div>
 
       </div>
     </div>

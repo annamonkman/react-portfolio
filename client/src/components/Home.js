@@ -11,9 +11,9 @@ const Home = () => {
           <p>I am Anna Monkman, a junior web developer based in London and Surrey. Welcome to my portfolio site.</p>
         </div>
         <div className="home-info-links">
-          <p>&gt; LinkedIn</p>
-          <p>&gt; Email</p>
-          <p>&gt; Github</p>
+          <div className="home-link-indv"><div className="link-icon">&gt;&gt;</div>LinkedIn</div>
+          <div className="home-link-indv"><div className="link-icon">&gt;&gt;</div>Email</div>
+          <div className="home-link-indv"><div className="link-icon">&gt;&gt;</div>Github</div>
         </div>
       </div>
       <div className="footer"></div>
