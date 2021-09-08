@@ -298,6 +298,10 @@ a {
   color: black;
 }
 
+// * {
+//   color: rgb(68, 68, 68);
+// }
+
 body {
   background-color: rgb(230, 233, 235);
 }
@@ -460,6 +464,9 @@ body {
     margin-right: 50px;
     font-size: 20px;
   }
+  .home-instructions {
+    font-size: 20px;
+  }
   .link-icon {
     font-family: 'EB Garamond', serif;
     display: inline-block;
@@ -524,13 +531,13 @@ body {
 
       .skills-wrapper {
         padding: 20px;
-        border: 1px solid red;
+        // border: 1px solid red;
         max-width: 800px;
         margin: 0 auto;
         font-family: 'Karla', serif;
       }
       .frontend-wrapper {
-        border: 1px solid green;
+        // border: 1px solid green;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
@@ -538,12 +545,12 @@ body {
         margin: 0 auto;
       }
       .skills-title {
-        border: 1px solid magenta;
+        // border: 1px solid magenta;
         display: inline-block;
         transform: rotate(-20deg);
       }
       .skill-indv-wrapper {
-        border: 1px solid magenta;
+        // border: 1px solid magenta;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -551,14 +558,147 @@ body {
         margin: 5px;
       }
       .skill-indv-img {
-        background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+        // background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
         padding: 30px;
       }
       .skill-indv-title {
-        border: 1px solid black;
+        // border: 1px solid black;
         padding: 10px;
         font-size: 14px;
       }
+      .html, .css, .js, .sass, .react, .node, .python, .vscode, .ue, .django, .restful, .npm, .postgresql, .github, .heroku, .blender, .figma, .git, .premiere, .photoshop {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      .html {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
+      }
+      .css {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
+      }
+      .js {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
+      }
+      .sass {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
+      }
+      .react {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
+      }
+      .node {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
+      }
+      .python {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
+      }
+      .vscode {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
+      }
+      .ue {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
+      }
+      .django {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
+      }
+      .restful {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
+      }
+      .npm {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
+      }
+      .postgresql {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png');
+
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
+      }
+      .github {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
+      }
+      .heroku {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
+      }
+      .blender {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
+      }
+      .figma {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
+      }
+      .git {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
+      }
+      .premiere {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
+      }
+      .photoshop {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png');
+        background:rgb(255, 255, 255);
+        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
+          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
+      }
+      .mongodb {
+        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631113149/portfolio-images/MongoDB_Logo_White_RGB_zxvsjv.svg');
+        background-size: fit;
+        background-repeat: no-repeat;
+      }
+
 
 
   /** ---------------------------------------------------------About--experience*/

@@ -56,24 +56,12 @@ const About = () => {
               <div className="skill-indv-title">React (Hooks)</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img bulma"></div>
-              <div className="skill-indv-title">Bulma</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img semantic"></div>
-              <div className="skill-indv-title">Semantic React UI</div>
-            </div>
-            <div className="skill-indv-wrapper">
               <div className="skill-indv-img node"></div>
               <div className="skill-indv-title">Node.JS</div>
             </div>
             <div className="skill-indv-wrapper">
               <div className="skill-indv-img mongodb"></div>
-              <div className="skill-indv-title">MongoDB</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img mongoose"></div>
-              <div className="skill-indv-title">Mongoose</div>
+              <div className="skill-indv-title">MongoDB/Mongoose</div>
             </div>
             <div className="skill-indv-wrapper">
               <div className="skill-indv-img express"></div>
@@ -92,10 +80,6 @@ const About = () => {
               <div className="skill-indv-title">PostgreSQL</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img tableplus"></div>
-              <div className="skill-indv-title">TablePlus</div>
-            </div>
-            <div className="skill-indv-wrapper">
               <div className="skill-indv-img insomnia"></div>
               <div className="skill-indv-title">Insomnia</div>
             </div>
@@ -112,14 +96,6 @@ const About = () => {
               <div className="skill-indv-title">Npm</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img pip"></div>
-              <div className="skill-indv-title">Pip</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img pipenv"></div>
-              <div className="skill-indv-title">PipEnv</div>
-            </div>
-            <div className="skill-indv-wrapper">
               <div className="skill-indv-img git"></div>
               <div className="skill-indv-title">Git</div>
             </div>
@@ -128,24 +104,8 @@ const About = () => {
               <div className="skill-indv-title">GitHub</div>
             </div>
             <div className="skill-indv-wrapper">
-              <div className="skill-indv-img insomnia"></div>
-              <div className="skill-indv-title">Insomnia</div>
-            </div>
-            <div className="skill-indv-wrapper">
               <div className="skill-indv-img vscode"></div>
               <div className="skill-indv-title">VS Code</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img tableplus"></div>
-              <div className="skill-indv-title">TablePlus</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img cloudinary"></div>
-              <div className="skill-indv-title">Cloudinary</div>
-            </div>
-            <div className="skill-indv-wrapper">
-              <div className="skill-indv-img mapbox"></div>
-              <div className="skill-indv-title">Mapbox</div>
             </div>
             <div className="skill-indv-wrapper">
               <div className="skill-indv-img netlify"></div>
@@ -158,11 +118,6 @@ const About = () => {
 
           </div>
 
-
-
-          <div className="frontend-title">
-            <h4>Art & Design:</h4>
-          </div>
 
           <div className="frontend-wrapper">
             
