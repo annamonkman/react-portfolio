@@ -11,22 +11,22 @@ const Nav = () => {
       <div className="nav-container-blue">
         <div className="nav-links-container">
           <div className="nav-link-logo-div">
-            <Link to="/">
+            <Link className="nav-link-to" to="/">
               Home, 
             </Link>
           </div>
           <div className="nav-link-indv-div">
-            <Link to="/about">
+            <Link className="nav-link-to" to="/about">
               About,
             </Link>
           </div>
           <div className="nav-link-indv-div">
-            <Link to="/projects">
+            <Link className="nav-link-to" to="/projects">
               Projects,
             </Link>
           </div>
           <div className="nav-link-indv-div">
-            <Link to="/art">
+            <Link className="nav-link-to" to="/art">
               Art,
             </Link>
           </div>

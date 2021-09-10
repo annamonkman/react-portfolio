@@ -343,6 +343,13 @@ body {
   margin-left: 5px;
   font-family:'Segment', sans-serif;
 }
+.nav-link-indv-div:hover, .nav-link-logo-div:hover {
+  background-color: rgba(197, 121, 71, 0.418);
+  border-radius: 4px;
+}
+.nav-link-to:hover {
+  color: rgb(252, 115, 24);
+}
 
 // .nav-link-logo-div {
 //   margin-right: 8px;
@@ -477,6 +484,7 @@ body {
     animation-iteration-count: infinite;
     animation-direction: alternate;
     animation-timing-function: linear;
+    color: white;
   }
   @keyframes pointer {
     0% {transform: translateX(0px);}
@@ -485,7 +493,7 @@ body {
 
   /** -----------------------------------------------------------------------ABOUT*/
 
-  .content-about {
+  .about-wrapper {
     // background-color: $nav-grey;
     margin: 0 auto;
     padding: 30px;
@@ -732,56 +740,121 @@ body {
 
   /** --------------------------------------------------------------------PROJECTS*/
 
-  .project-indv-wrapper {
-    border: 1px solid magenta;
-    width: 600px;
+  .page-wrapper {
+    font-family: 'Karla', sans-serif;
+  }
+  .projects-intro {
+    // border: 1px solid magenta;
+    width: 85%;
+    max-width: 1000px;
     margin: 0 auto;
+    margin-bottom: 70px;
+    font-family: 'Karla', sans-serif;
+    font-size: 20px;
+  }
+  .projects-intro p:nth-child(1){
+    margin-right: 30px;
+  }
+  .projects-intro p:nth-child(2){
+    margin-left: 30px;
+  }
+  .project-indv-wrapper {
+    // border: 2px solid rgb(255, 255, 255);
+    width: 100%;
+    // max-width: 900px;
+    margin: 0 auto;
+    // margin-bottom: 200px;
+    // background-color: rgb(247, 247, 247);
+    padding-bottom: 70px;
+  }
+
+  .p1, .p3 {
+    background-color: rgb(247, 247, 247);
+  }
+  .p2, .p4 {
+    background-color: rgb(230, 233, 235);
+  }
+
+  .project-indv-title {
+    // border: 1px solid rgb(255, 0, 0);
+    display: inline-block;
+    transform: rotate(-9deg);
+    position: relative;
+    left: 80px;
+    top: 20px;
+    color: rgb(0, 0, 0);
+    max-width: 220px;
+    font-size: 22px;
   }
   .project-img {
     background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-    padding: 200px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 636px;
+    min-height: 392px;
+    margin: 0 auto;
+    // border: 1px solid magenta;
   }
-.project-indv-title {
-  border: 1px solid green;
-}
-.project-indv-links {
-  border: 1px solid green;
-}
+
 .project-indv-info {
-  border: 1px solid yellowgreen;
+  max-width: 640px;
+  margin: 0 auto;
+  // border: 1px solid green;
+  // background-color: rgb(255, 255, 255);
+}
+.project-img-footer {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  font-size: 20px;
+  max-height: 50px;
+}
+.project-timeframe, .project-links {
+  display: inline-block;
+  // border: 1px solid red;
+  align-items: center;
+  padding: 7px 25px;
+}
+.project-description-tech-wrapper {
+  // border: 1px solid orange;
+  display: flex;
+  justify-content: space-between;
+}
+.project-description {
+  // border: 1px solid blue;
+  display: inline-block;
+  max-width: 65%;
   padding: 10px;
+  font-size: 16px;
 }
-.project-indv-description {
-  border: 1px solid red;
+.project-tech {
+  // border: 1px solid red;
   display: inline-block;
+  padding: 0 30px;
+  margin-right: 30px;
 }
-.project-indv-tech {
-  border: 1px solid blue;
-  display: inline-block;
-}
+
+
 
   /** -----------------------------------------------------------------------ART*/
 
+  .content-art {
+    margin-top: 100px;
+    background-color: rgb(58, 58, 58);
+    font-family: 'Karla', sans-serif;
+    color: white;
+  }
   .art-gallery {
 
   }
   .art-pic {
-    padding-top: 200px;
-    padding-left: 300px;
+    width: 700px;
+    height: 500px;
     margin: 20px;
     display: inline-block;
-    background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-  }
-
-  .content-art {
-    // background-color: rgb(102, 102, 102);
-    margin: 0;
-    padding: 20px;
-  }
-  .content-art p {
-    margin: 0;
+    background-image: url('https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80');
+    background-position: center;
+    background-size: cover;
   }
 
 

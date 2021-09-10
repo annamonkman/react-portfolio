@@ -5,7 +5,7 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-      <div className="content-about">
+      <div className="about-wrapper">
 
         
         <div className="bio-wrapper">
@@ -23,7 +23,7 @@ const About = () => {
           </div>
 
           <div className="bio-p-4">
-            <p>I am now open for opportunities as a frontend or full-stack web developer in a team or as an individual.</p>
+            <p>I am now open for opportunities as a front-end or full-stack web developer in a team or as an individual.</p>
           </div>
         
         </div>
