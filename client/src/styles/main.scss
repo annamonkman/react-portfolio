@@ -336,21 +336,34 @@ body {
   font-size: 30px;
 }
 
-.nav-link-indv-div, .nav-link-logo-div {
+.home, .about, .projects, .art {
   // border: 1px solid red;
+  
+  
+}
+.nav-link-to {
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
   font-family:'Segment', sans-serif;
-}
-.nav-link-indv-div:hover, .nav-link-logo-div:hover {
-  background-color: rgba(197, 121, 71, 0.418);
+  }
+.home:hover, .about:hover, .projects:hover, .art:hover {
+  background-color: rgba(255, 255, 255, 0.418);
   border-radius: 4px;
+  border: 1px solid black;
 }
 .nav-link-to:hover {
-  color: rgb(252, 115, 24);
+  color: rgb(255, 131, 49);
 }
 
+.active a {
+  // background-color: rgba(255, 187, 0, 0.212);
+  // border-radius: 4px;
+  // border: 0.5px solid black;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 1px;
+}
 // .nav-link-logo-div {
 //   margin-right: 8px;
 //   margin-top: 5px;
@@ -522,16 +535,6 @@ body {
   }
   .bio-p-4 {
     margin-left: 70px;
-  }
-
-  .interests-wrapper {
-    border: 1px solid red;
-  }
-  .interests-title {
-    border: 1px solid red;
-  }
-  .interests-text {
-    border: 1px solid red;
   }
 
 
@@ -711,31 +714,64 @@ body {
 
   /** ---------------------------------------------------------About--experience*/
 
-  .experience-wrapper {
-    border: 1px solid red;
-    padding: 20px;
+  .exp-edu-wrapper {
+    // border: 1px solid rgb(243, 196, 196);
+    max-width: 80%;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    margin-top: 40px;
   }
-  .experience-title {
-    border: 1px solid green;
+  .exp-edu-title {
+    // border: 1px solid green;
+    display: inline-block;
+    padding: 0px;
+    margin-bottom: 10px;
+    h2 {
+      // border: 1px solid red;
+      margin: 0;
+      font-size: 24px;
+    }
   }
-  .experience-list {
-    border: 1px solid green;
+  .exp-moreinfo {
+    margin-bottom: 20px;
+    // border: 1px solid rgb(168, 218, 168);
+    p {
+      margin: 0;
+      font-size: 18px;
+      font-style: italic;
+    }
   }
-  .experience-indv {
-    border: 1px solid magenta;
+  .exp-edu-list {
+    // border: 1px solid rgb(168, 218, 168);
   }
-  .ex-position {
-    border: 1px solid green;
+  .exp-edu-indv {
+    // border: 1px solid rgb(102, 102, 102);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+    margin-bottom: 15px;
   }
-  .ex-company {
-    border: 1px solid green;
-    margin-left: 20px;
+  .exp-detail {
+    // border: 1px solid rgb(201, 97, 166);
+    width: 250px;
   }
-  .ex-dates {
-    border: 1px solid green;
-    margin-left: 20px;
-  }
+  // .ex-company {
+  //   border: 1px solid rgb(226, 176, 66);
+  // }
+  // .ex-dates {
+  //   border: 1px solid green;
+  // }
 
+  /** --------------------------------------------------------------------INTERESTS*/
+
+  .interests-wrapper {
+    border: 1px solid red;
+    max-width: 200px;
+    p {
+      font-size: 16px;
+    }
+  }
 
 
   /** --------------------------------------------------------------------PROJECTS*/

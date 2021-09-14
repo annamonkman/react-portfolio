@@ -1,31 +1,43 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+
 // import styles from '../styles/navbar.module.css'
 
 const Nav = () => {
 
+  //asigning location variable
+  const location = useLocation()
+
+  //destructuring pathname from location
+
+  const { pathname } = location
+
+  //JavaScript split method to get the name of the path in array
+  const splitLocation = pathname.split('/')
 
   
   return (
     <div className="sticky">
       <div className="nav-container-blue">
         <div className="nav-links-container">
-          <div className="nav-link-logo-div">
+          {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
+          <div className={splitLocation[1] === '' ? 'active' : ''}>
             <Link className="nav-link-to" to="/">
               Home, 
             </Link>
           </div>
-          <div className="nav-link-indv-div">
+          <div className={splitLocation[1] === 'about' ? 'active' : ''}>
             <Link className="nav-link-to" to="/about">
               About,
             </Link>
           </div>
-          <div className="nav-link-indv-div">
+          <div className={splitLocation[1] === 'projects' ? 'active' : ''}>
             <Link className="nav-link-to" to="/projects">
               Projects,
             </Link>
           </div>
-          <div className="nav-link-indv-div">
+          <div className={splitLocation[1] === 'art' ? 'active' : ''}>
             <Link className="nav-link-to" to="/art">
               Art,
             </Link>

@@ -146,50 +146,54 @@ const About = () => {
 
         </div>
 
-        <div className="experience-wrapper">
-          <div className="experience-title">
-            <h2>Experience & Education please find more information about each role on LinkedIn</h2>
+        <div className="exp-edu-wrapper">
+          <div className="exp-edu-title">
+            <h2>Experience</h2>
           </div>
-          <div className="experience-list">
+          <div className="exp-moreinfo">
+            <p>Please find more information about each role on LinkedIn.</p>
+          </div>
+          <div className="exp-edu-list">
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
+            </div>
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
+            </div>
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
+            </div>
+          </div>
+        </div>
 
-            <div className="experience-indv">
-              <p><span className="ex-position">Supermarket Assistant</span><span className="ex-company">Waitrose, Godalming</span><span className="ex-dates">PT Nov 2020 - Current</span></p>
+        <div className="exp-edu-wrapper">
+          <div className="exp-edu-title">
+            <h2 className="exp-edu-h">Education</h2>
+          </div>
+          <div className="exp-edu-list">
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Software Engineering Immersive</div><div className="exp-detail">General Assembly, London/Remote</div><div className="exp-detail">Feb 2021 - Apr 2021</div>
             </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">Software Engineering Immersive</span><span className="ex-company">General Assembly, London/Remote</span><span className="ex-dates">Feb 2021 - Apr 2021</span></p>
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Introduction to Web Development</div><div className="exp-detail">Code First Girls, London</div><div className="exp-detail">Jan 2020 - March 2020 PT</div>
             </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">Runner</span><span className="ex-company">One of Us, London</span><span className="ex-dates">Feb 2020 - Aug 2020</span></p>
+            <div className="exp-edu-indv">
+              <div className="exp-detail">BA Fine Art</div><div className="exp-detail">Goldsmiths, University of London</div><div className="exp-detail">Sept 2016 - June 2019 (First Class Honors)</div>
             </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">Introduction to Web Development</span><span className="ex-company">Code First Girls, London</span><span className="ex-dates">Jan 2020 - March 2020 PT</span></p>
-            </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">Work Placement</span><span className="ex-company">Furtherfield Gallery, London</span><span className="ex-dates">May 2019 - Oct 2019</span></p>
-            </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">BA Fine Art</span><span className="ex-company">Goldsmiths, University of London</span><span className="ex-dates">Sept 2016 - June 2019 (First Class Honors)</span></p>
-            </div>
-            <div className="experience-indv">
-              <p><span className="ex-position">Foundation Diploma in Art & Design</span><span className="ex-company">Kingston, School of Art</span><span className="ex-dates">Sept 2015 - June 2016</span></p>
+            <div className="exp-edu-indv">
+              <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
             </div>
 
           </div>
         </div>
 
         <div className="interests-wrapper">
-          <div className="interests-title">
-            <h4>Interests</h4>
-          </div>
-          <div className="interests-text">
-            <p>I like fashion, photography, design, cooking new dishes, contemporary art, film, and the crossovers of all of these. </p>
-          </div>
+          <p>My interests include fashion, photography, design, cooking, contemporary art, film, and the crossovers of all of these. </p>
         </div>
         
         <div className="site-credits">
-          <p>site designed and developed by Anna Monkman</p>
+          <p>Site designed and developed by Anna Monkman</p>
           <p>using typefaces segment by .. and ...</p>
-          <p>React Hooks, animation .... by ...</p>
         </div>
 
       </div>
