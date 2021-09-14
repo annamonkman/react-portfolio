@@ -282,6 +282,7 @@ $nav-blue: #66d9ff;
 $nav-grey: #cccccce3;
 $nav-light: #ffffffe3;
 $nav-green: #ffffffe3;
+$nav-yellow-green: #eef09ce3;
 
 
 
@@ -310,7 +311,7 @@ body {
 
 /** -----------------------------------------------------------------------NAV*/
 
-.nav-container-blue {
+.nav-container {
   background-color: $nav;
   height: 30px;
   margin-top: 0;
@@ -338,14 +339,14 @@ body {
 
 .home, .about, .projects, .art {
   // border: 1px solid red;
-  
-  
+  color: grey;
 }
 .nav-link-to {
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
   font-family:'Segment', sans-serif;
+  color: grey;
   }
 .home:hover, .about:hover, .projects:hover, .art:hover {
   background-color: rgba(255, 255, 255, 0.418);
@@ -353,16 +354,20 @@ body {
   border: 1px solid black;
 }
 .nav-link-to:hover {
-  color: rgb(255, 131, 49);
+  color: rgb(255, 153, 0);
+  // text-decoration-line: underline;
+  // text-decoration-style: solid;
+  // text-decoration-thickness: 1px;
 }
 
 .active a {
   // background-color: rgba(255, 187, 0, 0.212);
   // border-radius: 4px;
   // border: 0.5px solid black;
-  text-decoration-line: underline;
-  text-decoration-style: solid;
-  text-decoration-thickness: 1px;
+  // text-decoration-line: underline;
+  // text-decoration-style: solid;
+  // text-decoration-thickness: 1px;
+  color: black;
 }
 // .nav-link-logo-div {
 //   margin-right: 8px;
@@ -462,6 +467,7 @@ body {
     max-width: 800px;
     padding: 0 60px 0 60px;
     font-family: 'Karla', sans-serif;
+    margin-top: 60px;
     // text-transform: uppercase;
   }
   .home-info-text {
@@ -504,242 +510,255 @@ body {
     100% {transform: translateX(15px);}
   }
 
-  /** -----------------------------------------------------------------------ABOUT*/
+  /** -----------------------------------------------------------------------ABOUT BIO*/
 
   .about-wrapper {
     // background-color: $nav-grey;
     margin: 0 auto;
-    padding: 30px;
+    // margin-top: 20px;
+    padding: 10px;
     // border: 1px solid red;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
   }
 
+  .about-sections-title {
+    text-transform: uppercase;
+    display: inline-block;
+    // border: 1px solid rgb(253, 193, 193);
+    width: 120px;
+  }
+
   .bio-wrapper {
     // border: 1px solid red;
-    max-width: 80%;
+    max-width: 100%;
     margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+  .bio {
+    // border: 1px solid green;
+    display: inline-block;
+    max-width: 85%;
   }
   .bio-p-1, .bio-p-2, .bio-p-3, .bio-p-4 {
     // border: 1px solid green;
-    max-width: 80%;
+    max-width: 90%;
+    p {
+      margin-top: 0;
+      margin-bottom: 10px;
+    }
   }
   .bio-p-1 {
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .bio-p-2 {
-    margin-left: 40px;
+    margin-left: 30px;
   }
   .bio-p-3 {
-    margin-left: 10px;
+    margin-left: 60px;
   }
   .bio-p-4 {
-    margin-left: 70px;
+    margin-left: 90px;
   }
 
 
-      /** ---------------------------------------------------------About--skills*/
+/** ---------------------------------------------------------About--skills*/
+.skills-wrapper {
+  // border: 1px solid orange;
+  max-width: 100%;
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 80px;
+}
+.skills {
+  // border: 1px solid rgb(131, 238, 117);
+  width: 85%;
+  margin: 0 auto;
+  font-family: 'Karla', serif;
+}
+.frontend-wrapper {
+  // border: 1px solid rgb(156, 194, 191);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 100%;
+  margin: 0 auto;
+}
+.skill-indv-wrapper {
+  // border: 1px solid magenta;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  max-width: 70px;
+  margin: 5px;
+}
+.skill-indv-img {
+  // background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  padding: 30px;
+}
+.skill-indv-title {
+  // border: 1px solid black;
+  padding: 10px;
+  font-size: 14px;
+}
+.html, .css, .js, .sass, .react, .node, .python, .vscode, .ue, .django, .restful, .npm, .postgresql, .github, .heroku, .blender, .figma, .git, .premiere, .photoshop {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
-      .skills-wrapper {
-        padding: 20px;
-        // border: 1px solid red;
-        max-width: 800px;
-        margin: 0 auto;
-        font-family: 'Karla', serif;
-      }
-      .frontend-wrapper {
-        // border: 1px solid green;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        max-width: 600px;
-        margin: 0 auto;
-      }
-      .skills-title {
-        // border: 1px solid magenta;
-        display: inline-block;
-        transform: rotate(-20deg);
-      }
-      .skill-indv-wrapper {
-        // border: 1px solid magenta;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        max-width: 70px;
-        margin: 5px;
-      }
-      .skill-indv-img {
-        // background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-        padding: 30px;
-      }
-      .skill-indv-title {
-        // border: 1px solid black;
-        padding: 10px;
-        font-size: 14px;
-      }
-      .html, .css, .js, .sass, .react, .node, .python, .vscode, .ue, .django, .restful, .npm, .postgresql, .github, .heroku, .blender, .figma, .git, .premiere, .photoshop {
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-      }
+.html {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
+}
+.css {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
+}
+.js {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
+}
+.sass {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
+}
+.react {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
+}
+.node {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
+}
+.python {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
+}
+.vscode {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
+}
+.ue {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
+}
+.django {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
+}
+.restful {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
+}
+.npm {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
+}
+.postgresql {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png');
 
-      .html {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
-      }
-      .css {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
-      }
-      .js {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
-      }
-      .sass {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
-      }
-      .react {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
-      }
-      .node {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
-      }
-      .python {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
-      }
-      .vscode {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
-      }
-      .ue {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
-      }
-      .django {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
-      }
-      .restful {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
-      }
-      .npm {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
-      }
-      .postgresql {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png');
-
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
-      }
-      .github {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
-      }
-      .heroku {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
-      }
-      .blender {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
-      }
-      .figma {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
-      }
-      .git {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
-      }
-      .premiere {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
-      }
-      .photoshop {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png');
-        background:rgb(255, 255, 255);
-        -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
-          mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
-      }
-      .mongodb {
-        background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631113149/portfolio-images/MongoDB_Logo_White_RGB_zxvsjv.svg');
-        background-size: fit;
-        background-repeat: no-repeat;
-      }
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
+}
+.github {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
+}
+.heroku {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
+}
+.blender {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
+}
+.figma {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
+}
+.git {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
+}
+.premiere {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
+}
+.photoshop {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png');
+  background:rgb(255, 255, 255);
+  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
+    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
+}
+.mongodb {
+  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631113149/portfolio-images/MongoDB_Logo_White_RGB_zxvsjv.svg');
+  background-size: fit;
+  background-repeat: no-repeat;
+}
 
 
 
   /** ---------------------------------------------------------About--experience*/
 
   .exp-edu-wrapper {
+    // border: 1px solid red;
+    margin-bottom: 70px;
+    display: flex;
+  }
+  .exp-edu {
     // border: 1px solid rgb(243, 196, 196);
-    max-width: 80%;
+    width: 80%;
     margin: 0 auto;
-    margin-bottom: 50px;
-    margin-top: 40px;
   }
-  .exp-edu-title {
-    // border: 1px solid green;
-    display: inline-block;
-    padding: 0px;
-    margin-bottom: 10px;
-    h2 {
-      // border: 1px solid red;
-      margin: 0;
-      font-size: 24px;
-    }
-  }
-  .exp-moreinfo {
-    margin-bottom: 20px;
+  .exp-more-info {
+    padding-top: 10px;
     // border: 1px solid rgb(168, 218, 168);
-    p {
-      margin: 0;
-      font-size: 18px;
-      font-style: italic;
-    }
+    margin: 0;
+    font-size: 14px;
+    font-style: italic;
+    text-transform: none;
+
   }
   .exp-edu-list {
     // border: 1px solid rgb(168, 218, 168);
@@ -765,12 +784,24 @@ body {
 
   /** --------------------------------------------------------------------INTERESTS*/
 
+  .interests-credits-wrapper {
+    margin-top: 130px;
+  }
   .interests-wrapper {
-    border: 1px solid red;
-    max-width: 200px;
+    // border: 1px solid red;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 30px;
     p {
-      font-size: 16px;
+      font-size: 18px;
+      // border: 1px solid red;
+      max-width: 80%;
+      // margin: 0 auto;
+      display: inline-block;
+      margin: 0 50px;
     }
+    
   }
 
 
@@ -778,6 +809,7 @@ body {
 
   .page-wrapper {
     font-family: 'Karla', sans-serif;
+    margin-top: 60px;
   }
   .projects-intro {
     // border: 1px solid magenta;
@@ -814,21 +846,26 @@ body {
   .project-indv-title {
     // border: 1px solid rgb(255, 0, 0);
     display: inline-block;
-    transform: rotate(-9deg);
+    transform: rotate(-0deg);
     position: relative;
     left: 80px;
     top: 20px;
     color: rgb(0, 0, 0);
     max-width: 220px;
-    font-size: 22px;
+    
+    h3 {
+      font-size: 22px;
+      text-transform: uppercase;
+      font-weight: 100;
+    }
   }
   .project-img {
     background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    max-width: 636px;
-    min-height: 392px;
+    max-width: 700px;
+    min-height: 420px;
     margin: 0 auto;
     // border: 1px solid magenta;
   }
@@ -899,94 +936,101 @@ body {
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  .dot1 {
-    background-image: radial-gradient($nav 85%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
+  // .dot1 {
+  //   background-image: radial-gradient($nav 85%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot2 {
+  //   background-image: radial-gradient($nav 80%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot3 {
+  //   background-image: radial-gradient($nav 75%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot4 {
+  //   background-image: radial-gradient($nav 70%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot5 {
+  //   background-image: radial-gradient($nav 65%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot6 {
+  //   background-image: radial-gradient($nav 60%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot7 {
+  //   background-image: radial-gradient($nav 55%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot8 {
+  //   background-image: radial-gradient($nav 54%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot9 {
+  //   background-image: radial-gradient($nav 45%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot10 {
+  //   background-image: radial-gradient($nav 40%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0, 0px 0;
+  //   background-size: 10px 10px;
+  // }
+  // .dot11 {
+  //   background-image: radial-gradient($nav 35%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot12 {
+  //   background-image: radial-gradient($nav 30%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot13 {
+  //   background-image: radial-gradient($nav 25%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot14 {
+  //   background-image: radial-gradient($nav 20%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot15 {
+  //   background-image: radial-gradient($nav 15%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot16 {
+  //   background-image: radial-gradient($nav 10%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot17 {
+  //   background-image: radial-gradient($nav 5%, rgba(255, 255, 255, 0));
+  //   background-position: 5px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  // .dot18 {
+  //   background-image: radial-gradient($nav 2%, rgba(255, 255, 255, 0));
+  //   background-position: 0px, 0px, 0px, 0px;
+  //   background-size: 10px 10px;
+  // }
+  .dot-home {
+    display: none;
   }
-  .dot2 {
-    background-image: radial-gradient($nav 80%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
+  .nav-container {
+    height: 40px;
   }
-  .dot3 {
-    background-image: radial-gradient($nav 75%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot4 {
-    background-image: radial-gradient($nav 70%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot5 {
-    background-image: radial-gradient($nav 65%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot6 {
-    background-image: radial-gradient($nav 60%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot7 {
-    background-image: radial-gradient($nav 55%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot8 {
-    background-image: radial-gradient($nav 54%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot9 {
-    background-image: radial-gradient($nav 45%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot10 {
-    background-image: radial-gradient($nav 40%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0, 0px 0;
-    background-size: 10px 10px;
-  }
-  .dot11 {
-    background-image: radial-gradient($nav 35%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot12 {
-    background-image: radial-gradient($nav 30%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot13 {
-    background-image: radial-gradient($nav 25%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot14 {
-    background-image: radial-gradient($nav 20%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot15 {
-    background-image: radial-gradient($nav 15%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot16 {
-    background-image: radial-gradient($nav 10%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot17 {
-    background-image: radial-gradient($nav 5%, rgba(255, 255, 255, 0));
-    background-position: 5px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
-  .dot18 {
-    background-image: radial-gradient($nav 2%, rgba(255, 255, 255, 0));
-    background-position: 0px, 0px, 0px, 0px;
-    background-size: 10px 10px;
-  }
+
 }}

@@ -19,7 +19,7 @@ const Nav = () => {
   
   return (
     <div className="sticky">
-      <div className="nav-container-blue">
+      <div className="nav-container">
         <div className="nav-links-container">
           {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
           <div className={splitLocation[1] === '' ? 'active' : ''}>
