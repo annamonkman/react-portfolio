@@ -1,5 +1,5 @@
 import React from 'react'
-// import { Fade } from 'react-reveal'
+import { Fade } from 'react-reveal'
 // import Reveal from 'react-reveal/Reveal'
 
 const About = () => {
@@ -12,16 +12,24 @@ const About = () => {
           <div className="about-sections-title">bio:</div>
           <div className="bio">
             <div className="bio-p-1">
-              <p>I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p>
+              <Fade left>
+                <p>I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p>
+              </Fade>
             </div>
             <div className="bio-p-2">
-              <p>I have recently completed a Software Engineering Bootcamp at General Assembly on which I explored front and back-end technologies such as HTML, CSS, JavaScript, React Hooks, MongoDB and Django.</p>
+              <Fade left>
+                <p>I have recently completed a Software Engineering Bootcamp at General Assembly on which I explored front and back-end technologies such as HTML, CSS, JavaScript, React Hooks, MongoDB and Django.</p>
+              </Fade>
             </div>
             <div className="bio-p-3">
-              <p>My journey to code came after completing my Fine Art Degree in 2019. I had enjoyed experimenting with digital software such as Adobe Premiere, Photoshop and Blender to make films, and I wanted to expand my technical skills in another area. I completed a short web development course with Code First Girls and was inspired by the possibilities that were opened up with coding. </p>
+              <Fade left>
+                <p>My journey to code came after completing my Fine Art Degree in 2019. I had enjoyed experimenting with digital software such as Adobe Premiere, Photoshop and Blender to make films, and I wanted to expand my technical skills in another area. I completed a short web development course with Code First Girls and was inspired by the possibilities that were opened up with coding. </p>
+              </Fade>
             </div>
             <div className="bio-p-4">
-              <p>I am now open for opportunities as a front-end or full-stack web developer in a team or as an individual.</p>
+              <Fade left>
+                <p>I am now open for opportunities as a front-end or full-stack web developer in a team or as an individual.</p>
+              </Fade>
             </div>
           </div>
         </div>
@@ -147,13 +155,19 @@ const About = () => {
           <div className="exp-edu">
             <div className="exp-edu-list">
               <div className="exp-edu-indv">
-                <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
+                <Fade left>
+                  <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
+                </Fade>
               </div>
               <div className="exp-edu-indv">
-                <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
+                <Fade left>
+                  <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
+                </Fade>
               </div>
               <div className="exp-edu-indv">
-                <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
+                <Fade left>
+                  <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
+                </Fade>
               </div>
             </div>
           </div>
@@ -163,16 +177,24 @@ const About = () => {
           <div className="exp-edu">
             <div className="exp-edu-list">
               <div className="exp-edu-indv">
-                <div className="exp-detail">Software Engineering Immersive</div><div className="exp-detail">General Assembly, London/Remote</div><div className="exp-detail">Feb 2021 - Apr 2021</div>
+                <Fade left>
+                  <div className="exp-detail">Software Engineering Immersive</div><div className="exp-detail">General Assembly, London/Remote</div><div className="exp-detail">Feb 2021 - Apr 2021</div>
+                </Fade>
               </div>
               <div className="exp-edu-indv">
-                <div className="exp-detail">Introduction to Web Development</div><div className="exp-detail">Code First Girls, London</div><div className="exp-detail">Jan 2020 - March 2020 PT</div>
+                <Fade left>
+                  <div className="exp-detail">Introduction to Web Development</div><div className="exp-detail">Code First Girls, London</div><div className="exp-detail">Jan 2020 - March 2020 PT</div>
+                </Fade>
               </div>
               <div className="exp-edu-indv">
-                <div className="exp-detail">BA Fine Art</div><div className="exp-detail">Goldsmiths, University of London</div><div className="exp-detail">Sept 2016 - June 2019 (First Class Honors)</div>
+                <Fade left>
+                  <div className="exp-detail">BA Fine Art</div><div className="exp-detail">Goldsmiths, University of London</div><div className="exp-detail">Sept 2016 - June 2019 (First Class Honors)</div>
+                </Fade>
               </div>
               <div className="exp-edu-indv">
-                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
+                <Fade left>
+                  <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
+                </Fade>
               </div>
             </div>
           </div>

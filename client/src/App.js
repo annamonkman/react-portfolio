@@ -7,6 +7,7 @@ import Projects from './components/Projects'
 import Art from './components/Art'
 
 const App = () => {
+
   return (
     <BrowserRouter>
       <Nav />
