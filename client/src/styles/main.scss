@@ -275,7 +275,7 @@ progress {
 
 /** -----------------------------------------------------------------------VARIABLES*/
 
-$nav: #eef09ce3;
+$nav: #eff09cec;
 $nav-red: #ffb9b9e3;
 $nav-yellow: #ffd86ede;
 $nav-blue: #66d9ff;
@@ -913,30 +913,52 @@ body {
 
   .art-wrapper {
     // border: 1px solid black;
-    color: white;
+    color: black;
     font-family: 'Karla', sans-serif;
     font-size: 18px;
   }
   .art-proj-wrapper {
     // border: 1px solid black;
-    width: 80%;
-    margin: 0 auto;
-    background-color:rgb(0, 0, 0);
-    margin-bottom: 100px;
-    margin-top: 80px;
-    padding-top: 50px;
+    width: 100%;
+    // margin-bottom: 200px;
+    // margin-top: 80px;
+    background-color:rgba(0, 0, 0, 0.836);
+    padding: 5px;
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
   }
-  
-  .art-pic {
-    width: 700px;
-    height: 500px;
-    // display: inline-block;
-    background-image: url('https://images.unsplash.com/photo-1471922694854-ff1b63b20054?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=752&q=80');
-    background-position: center;
-    background-size: cover;
-    margin: 0 auto;
-    margin-bottom: 30px;
-    margin-top: 30px;
+  .art-info-wrapper {
+    // background-color: rgb(241, 241, 241);
+    max-width: 700px;
+    // width: 100%;
+    margin-left: 20px;
+    padding: 5px;
+    margin-top: 10px;
+    color: white;
+  }
+  .art-gallery-wrapper {
+    // background-color:rgb(51, 51, 51);
+    width: 100%;
+    text-align: center;
+  }
+  .art-img {
+    width: 80%;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .art-description {
+    display: inline-block;
+    width: 80%;
+    padding-left: 20px;
+    font-size: 16px;
+  }
+  .art-title {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
   }
 
 
