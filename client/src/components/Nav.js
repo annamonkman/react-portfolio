@@ -23,8 +23,8 @@ const Nav = () => {
         <div className="nav-links-container">
           {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
           <div className={splitLocation[1] === '' ? 'active' : ''}>
-            <Link className="nav-link-to" to="/">
-              Home, 
+            <Link className="nav-link-to home" to="/">
+              A.M., 
             </Link>
           </div>
           <div className={splitLocation[1] === 'about' ? 'active' : ''}>

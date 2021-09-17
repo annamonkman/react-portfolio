@@ -9,9 +9,9 @@ const Projects = () => {
       </div>
 
 
-      <div className="project-indv-wrapper p1">
+      <div className="project-indv-wrapper p4">
         <div className="project-indv-title">
-          <h3>Project 4:   Carousel Collective</h3>
+          <h3><span className="dot"></span>Project 4:   Carousel Collective</h3>
         </div>
         <div className="project-img"></div>
         <div className="project-indv-info">
@@ -32,9 +32,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="project-indv-wrapper p2">
+      <div className="project-indv-wrapper p3">
         <div className="project-indv-title">
-          <h3>Project 3:   Festivalist</h3>
+          <h3><span className="dot"></span>Project 3:   Festivalist</h3>
         </div>
         <div className="project-img"></div>
         <div className="project-indv-info">
@@ -55,9 +55,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="project-indv-wrapper p3">
+      <div className="project-indv-wrapper p2">
         <div className="project-indv-title">
-          <h3>Project 2:   StarTrumps</h3>
+          <h3><span className="dot"></span>Project 2:   StarTrumps</h3>
         </div>
         <div className="project-img"></div>
         <div className="project-indv-info">
@@ -78,9 +78,9 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="project-indv-wrapper p4">
+      <div className="project-indv-wrapper p1">
         <div className="project-indv-title">
-          <h3>Project 1:   Frogger</h3>
+          <h3><span className="dot"></span>Project 1:   Frogger</h3>
         </div>
         <div className="project-img"></div>
         <div className="project-indv-info">

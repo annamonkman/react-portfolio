@@ -29,7 +29,7 @@ const Art = () => {
         
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
-          <h3 className="art-title">Commission for artist Christopher Bond, 2021</h3>
+          <h3 className="art-title"><span className="dot art-dot"></span>Commission for artist Christopher Bond, 2021</h3>
           <div className="art-description">
             <p>I was asked to model an unmade bed with wetness on the top for a film that Bond is working on.</p>
             <p>quote from Chris--</p>
@@ -49,7 +49,7 @@ const Art = () => {
 
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
-          <h3 className="art-title">The Desk, 2019</h3>
+          <h3 className="art-title"><span className="dot art-dot"></span>The Desk, 2019</h3>
           <div className="art-description">
             <p>Screenshots from a film I made in my 3rd Year at Goldsmiths, University of London. Shown in my Degree Show in June 2019.</p>
             <p>Made using Blender. Most Assets made by me with a few purchased online.</p>
@@ -70,7 +70,7 @@ const Art = () => {
 
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
-          <h3 className="art-title">The Knight, 2017</h3>
+          <h3 className="art-title"><span className="dot art-dot"></span>The Knight, 2017</h3>
           <div className="art-description">
             <p>Screenshots from a film I made in my 1st Year at Goldsmiths, University of London.</p>
             <p>Found images collaged together in Adobe Photoshop. Edited with Premiere and After Effects. Greenscreen footage shot by me. With thanks to Will as teh knight. </p>
