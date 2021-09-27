@@ -307,9 +307,9 @@ a {
 // }
 
 body {
-  background-color: rgb(198, 200, 206);
+  background-color: rgb(178, 181, 189);
   // background-color: #ffffff;
-  background-image: url("https://www.transparenttextures.com/patterns/light-paper-fibers.png");
+  background-image: url("../assets/papertex.png");
 /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
   // background-image: linear-gradient(145deg, rgba(247,247,250,1) 0%, rgb(227, 231, 235) 100%);
 }
@@ -319,15 +319,29 @@ body {
 .dot {
   height: 7px;
   width: 7px;
-  background-color: rgb(0, 0, 0);
   border-radius: 50%;
   display: inline-block;
   margin-right: 10px;
   margin-bottom: 5px;
+  animation: blink-black 1.1s ease-in-out infinite alternate;
 }
 .art-dot {
-  background-color: rgb(255, 255, 255);
+  animation: blink-white 1.1s ease-in-out infinite alternate;
 }
+@keyframes blink-black {
+  0%{background-color: black;}
+  100%{background-color: rgba(0, 0, 0, 0);}
+}
+@keyframes blink-white {
+  0%{background-color: rgb(255, 255, 255);}
+  100%{background-color: rgba(255, 255, 255, 0);}
+}
+
+
+.react-reveal{
+  animation-fill-mode: backwards !important;
+  }
+
 /** -----------------------------------------------------------------------NAV*/
 
 .nav-container {
@@ -515,6 +529,9 @@ body {
     font-size: 20px;
     color: rgb(0, 0, 0);
   }
+  .home-link-indv a:hover {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #ff0000c5, 0 0 6px #ff0000d5;
+  }
   .home-instructions {
     font-size: 20px;
   }
@@ -535,18 +552,25 @@ body {
     100% {transform: translateX(15px);}
   }
 
-  /** -----------------------------------------------------------------------ABOUT BIO*/
+  /** -----------------------------------------------------------------------ABOUT*/
 
   .about-wrapper {
     // background-color: $nav-grey;
     margin: 0 auto;
-    // margin-top: 20px;
-    padding: 10px;
+    padding: 15px;
     // border: 1px solid red;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
   }
-
+  .about-section-wrapper {
+    // border: 1px solid red;
+    max-width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 70px;
+  }
   .about-sections-title {
     text-transform: uppercase;
     display: inline-block;
@@ -554,15 +578,8 @@ body {
     width: 120px;
   }
 
-  .bio-wrapper {
-    // border: 1px solid red;
-    max-width: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    margin-top: 40px;
-    margin-bottom: 60px;
-  }
+  /** ---------------------------------------------------------------------About--BIO*/
+  
   .bio {
     // border: 1px solid green;
     display: inline-block;
@@ -591,13 +608,7 @@ body {
 
 
 /** ---------------------------------------------------------About--skills*/
-.skills-wrapper {
-  // border: 1px solid orange;
-  max-width: 100%;
-  display: flex;
-  margin-top: 100px;
-  margin-bottom: 80px;
-}
+
 .skills {
   // border: 1px solid rgb(131, 238, 117);
   width: 85%;
@@ -616,159 +627,27 @@ body {
   // border: 1px solid magenta;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
-  max-width: 70px;
-  margin: 5px;
-}
-.skill-indv-img {
-  // background-image: url('https://images.unsplash.com/photo-1617854818583-09e7f077a156?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
-  padding: 30px;
+  justify-content: space-between;
+  width: 80px;
+  margin: 10px 5px;
+  text-align: center;
+    .icon {
+      margin: 0 auto;
+    }
 }
 .skill-indv-title {
   // border: 1px solid black;
-  padding: 10px;
+  padding: 8px;
   font-size: 14px;
+  color: rgb(49, 49, 49);
 }
-.html, .css, .js, .sass, .react, .node, .python, .vscode, .ue, .django, .restful, .npm, .postgresql, .github, .heroku, .blender, .figma, .git, .premiere, .photoshop {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-.html {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-html-100_vjoz9i.png") center/contain;
-}
-.css {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-css-100_trbfjn.png") center/contain;
-}
-.js {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-javascript-100-2_mgwcrp.png") center/contain;
-}
-.sass {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-sass-100-2_npmvs4.png") center/contain;
-}
-.react {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-react-100-2_gpl3aa.png") center/contain;
-}
-.node {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-node-js-100_yl01cw.png") center/contain;
-}
-.python {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-python-100-2_wgiraz.png") center/contain;
-}
-.vscode {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095876/portfolio-images/100px/icons8-visual-studio-code-2019-100-2_zyuszn.png") center/contain;
-}
-.ue {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-unreal-engine-100_z4ndpa.png") center/contain;
-}
-.django {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-django-100_r3hayy.png") center/contain;
-}
-.restful {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095875/portfolio-images/100px/icons8-rest-api-100_cb0iag.png") center/contain;
-}
-.npm {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-npm-100_zwrify.png") center/contain;
-}
-.postgresql {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png');
-
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-postgresql-100_huc3g3.png") center/contain;
-}
-.github {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-github-100_vs6ven.png") center/contain;
-}
-.heroku {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-heroku-100_is4klv.png") center/contain;
-}
-.blender {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-blender-3d-100_juo8iy.png") center/contain;
-}
-.figma {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-figma-100_dyc0vg.png") center/contain;
-}
-.git {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-git-100_hwszha.png") center/contain;
-}
-.premiere {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095874/portfolio-images/100px/icons8-adobe-premiere-pro-100_kud9sr.png") center/contain;
-}
-.photoshop {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png');
-  background:rgb(255, 255, 255);
-  -webkit-mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
-    mask:url("https://res.cloudinary.com/project-3/image/upload/v1631095873/portfolio-images/100px/icons8-adobe-photoshop-100_a0p0iv.png") center/contain;
-}
-.mongodb {
-  background-image: url('https://res.cloudinary.com/project-3/image/upload/v1631113149/portfolio-images/MongoDB_Logo_White_RGB_zxvsjv.svg');
-  background-size: fit;
-  background-repeat: no-repeat;
-}
-
 
 
   /** ---------------------------------------------------------About--experience*/
 
   .exp-edu-wrapper {
     // border: 1px solid red;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
     display: flex;
   }
   .exp-edu {
@@ -783,13 +662,9 @@ body {
     font-size: 14px;
     font-style: italic;
     text-transform: none;
-
-  }
-  .exp-edu-list {
-    // border: 1px solid rgb(168, 218, 168);
   }
   .exp-edu-indv {
-    // border: 1px solid rgb(102, 102, 102);
+    // border: 1px solid rgb(170, 121, 121);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -797,20 +672,16 @@ body {
     margin-bottom: 15px;
   }
   .exp-detail {
-    // border: 1px solid rgb(201, 97, 166);
+    // border: 1px solid rgb(255, 187, 59);
     width: 250px;
+    margin: 0px 3px;
   }
-  // .ex-company {
-  //   border: 1px solid rgb(226, 176, 66);
-  // }
-  // .ex-dates {
-  //   border: 1px solid green;
-  // }
 
-  /** --------------------------------------------------------------------INTERESTS*/
+  /** ----------------------------------------------------------------About----INTERESTS ETC*/
 
   .interests-credits-wrapper {
-    margin-top: 130px;
+    margin-top: 90px;
+    // border: 1px solid blue;
   }
   .interests-wrapper {
     // border: 1px solid red;
@@ -818,15 +689,17 @@ body {
     display: flex;
     justify-content: flex-start;
     margin-bottom: 30px;
-    p {
+    p, a {
       font-size: 18px;
-      // border: 1px solid red;
+      // border: 1px solid rgb(255, 153, 0);
       max-width: 80%;
       // margin: 0 auto;
       display: inline-block;
       margin: 0 50px;
     }
-    
+  }
+  .contact-link:hover {
+    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #003cffc5, 0 0 6px #202fffd5;
   }
 
 
@@ -862,16 +735,16 @@ body {
   }
 
   .p4 {
-    background-color: rgba(247, 245, 245, 0.89);
+    background-color: rgba(247, 245, 245, 0.637);
   }
   .p3 {
-    background-color: rgba(228, 220, 220, 0.952);
+    background-color: rgba(228, 220, 220, 0.63);
   }
   .p2 {
-    background-color: rgba(234, 237, 240, 0.89);
+    background-color: rgba(234, 237, 240, 0.616);
   }
   .p1 {
-    background-color: rgba(223, 219, 215, 0.966);
+    background-color: rgba(223, 219, 215, 0.603);
   }
 
   .project-indv-title {
@@ -883,7 +756,6 @@ body {
     top: 20px;
     color: rgb(0, 0, 0);
     max-width: 220px;
-    
     h3 {
       font-size: 22px;
       text-transform: uppercase;

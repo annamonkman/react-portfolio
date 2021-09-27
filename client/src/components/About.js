@@ -2,13 +2,38 @@ import React from 'react'
 import { Fade } from 'react-reveal'
 // import Reveal from 'react-reveal/Reveal'
 
+import { FaHtml5 } from 'react-icons/fa'
+import { FaCss3Alt } from 'react-icons/fa'
+import { FaJs } from 'react-icons/fa'
+import { FaReact } from 'react-icons/fa'
+import { FaSass } from 'react-icons/fa'
+import { FaNodeJs } from 'react-icons/fa'
+import { FaPython } from 'react-icons/fa'
+import { SiMongodb } from 'react-icons/si'
+import { SiDjango } from 'react-icons/si'
+import { SiPostgresql } from 'react-icons/si'
+import { FaYarn } from 'react-icons/fa'
+import { FaNpm } from 'react-icons/fa'
+import { DiGit } from 'react-icons/di'
+import { FaGithub } from 'react-icons/fa'
+import { SiVisualstudiocode } from 'react-icons/si'
+import { SiNetlify } from 'react-icons/si'
+import { SiHeroku } from 'react-icons/si'
+import { DiPhotoshop } from 'react-icons/di'
+import { SiAdobepremiere } from 'react-icons/si'
+import { SiBlender } from 'react-icons/si'
+import { SiUnrealengine } from 'react-icons/si'
+import { FaFigma } from 'react-icons/fa'
+
+
+
 const About = () => {
   return (
     <div>
       <div className="about-wrapper">
 
         
-        <div className="bio-wrapper">
+        <div className="about-section-wrapper">
           <div className="about-sections-title">bio:</div>
           <div className="bio">
             <div className="bio-p-1">
@@ -34,110 +59,98 @@ const About = () => {
           </div>
         </div>
       
-        <div className="skills-wrapper">
+        <div className="about-section-wrapper">
           <div className="about-sections-title">skills:</div>
           <div className="skills">
             <div className="frontend-wrapper">
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img html"></div>
+                <FaHtml5 size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">HTML5</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img css"></div>
+                <FaCss3Alt size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">CSS</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img js"></div>
+                <FaJs size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">JavaScript</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img sass"></div>
+                <FaSass size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">SASS</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img react"></div>
+                <FaReact size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">React (Hooks)</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img node"></div>
+                <FaNodeJs size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Node.JS</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img mongodb"></div>
-                <div className="skill-indv-title">MongoDB/Mongoose</div>
+                <SiMongodb size={55} color="white" className="icon"/> 
+                <div className="skill-indv-title">MongoDB</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img express"></div>
-                <div className="skill-indv-title">Express</div>
-              </div>
-              <div className="skill-indv-wrapper">
-                <div className="skill-indv-img python"></div>
+                <FaPython size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Python</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img django"></div>
+                <SiDjango size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Django</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img postgresql"></div>
+                <SiPostgresql size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">PostgreSQL</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img insomnia"></div>
-                <div className="skill-indv-title">Insomnia</div>
-              </div>
-              <div className="skill-indv-wrapper">
-                <div className="skill-indv-img restful"></div>
-                <div className="skill-indv-title">RESTful APIs</div>
-              </div>
-              <div className="skill-indv-wrapper">
-                <div className="skill-indv-img yarn"></div>
+                <FaYarn size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Yarn</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img npm"></div>
+                <FaNpm size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Npm</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img git"></div>
+                <DiGit size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Git</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img github"></div>
+                <FaGithub size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">GitHub</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img vscode"></div>
+                <SiVisualstudiocode size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">VS Code</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img netlify"></div>
+                <SiNetlify size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Netlify</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img heroku"></div>
+                <SiHeroku size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Heroku</div>
               </div>
             </div>
             <div className="frontend-wrapper">
               <div className="skill-indv-wrapper">
-                <i className="skill-indv-img photoshop"></i>
+                <DiPhotoshop size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Adobe Photoshop</div>
               </div>
               <div className="skill-indv-wrapper">
-                <i className="skill-indv-img premiere"></i>
+                <SiAdobepremiere size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Adobe Premiere</div>
               </div>
               <div className="skill-indv-wrapper">
-                <i className="skill-indv-img blender"></i>
+                <SiBlender size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Blender</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img ue"></div>
+                <SiUnrealengine size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Unreal Engine</div>
               </div>
               <div className="skill-indv-wrapper">
-                <div className="skill-indv-img figma"></div>
+                <FaFigma size={55} color="white" className="icon"/>
                 <div className="skill-indv-title">Figma</div>
               </div>
             </div>
@@ -147,55 +160,51 @@ const About = () => {
 
         
         
-        <div className="exp-edu-wrapper">
+        <div className="about-section-wrapper">
           <div className="about-sections-title">
             experience:
             <p className="exp-more-info">Please find more information about each role on LinkedIn.</p>
           </div>
           <div className="exp-edu">
-            <div className="exp-edu-list">
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
-                </Fade>
-              </div>
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
-                </Fade>
-              </div>
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
-                </Fade>
-              </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
+              </Fade>
             </div>
           </div>
         </div>
-        <div className="exp-edu-wrapper">
+        <div className="about-section-wrapper">
           <div className="about-sections-title">education:</div>
           <div className="exp-edu">
-            <div className="exp-edu-list">
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Software Engineering Immersive</div><div className="exp-detail">General Assembly, London/Remote</div><div className="exp-detail">Feb 2021 - Apr 2021</div>
-                </Fade>
-              </div>
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Introduction to Web Development</div><div className="exp-detail">Code First Girls, London</div><div className="exp-detail">Jan 2020 - March 2020 PT</div>
-                </Fade>
-              </div>
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">BA Fine Art</div><div className="exp-detail">Goldsmiths, University of London</div><div className="exp-detail">Sept 2016 - June 2019 (First Class Honors)</div>
-                </Fade>
-              </div>
-              <div className="exp-edu-indv">
-                <Fade left>
-                  <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
-                </Fade>
-              </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Software Engineering Immersive</div><div className="exp-detail">General Assembly, London/Remote</div><div className="exp-detail">Feb 2021 - Apr 2021</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Introduction to Web Development</div><div className="exp-detail">Code First Girls, London</div><div className="exp-detail">Jan 2020 - March 2020 PT</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">BA Fine Art</div><div className="exp-detail">Goldsmiths, University of London</div><div className="exp-detail">Sept 2016 - June 2019 (First Class Honors)</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
+              </Fade>
             </div>
           </div>
         </div>
@@ -212,7 +221,18 @@ const About = () => {
             <p>Site designed and developed by Anna Monkman.</p>
             <p>using typefaces segment by .. and ...</p>
           </div>
+
+          <div className="interests-wrapper">
+            <div className="about-sections-title">Contact:</div>
+            <p className="contact-link">annamonkman@me.com</p>
+            <a className="contact-link" href="https://www.linkedin.com/in/anna-monkman/" target="_blank" rel='noreferrer'>LinkedIn</a>
+            <a className="contact-link" href="https://github.com/annamonkman" target="_blank" rel='noreferrer'>Github</a>
+          </div>
         </div>
+        
+
+
+        
         
 
       </div>
