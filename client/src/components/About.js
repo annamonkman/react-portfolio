@@ -43,7 +43,7 @@ const About = () => {
             </div>
             <div className="bio-p-2">
               <Fade left>
-                <p>I have recently completed a Software Engineering Bootcamp at General Assembly on which I explored front and back-end technologies such as HTML, CSS, JavaScript, React Hooks, MongoDB and Django.</p>
+                <p>I have recently completed a Software Engineering Bootcamp at General Assembly on which I explored front and back-end technologies including HTML, CSS, JavaScript, React Hooks, MongoDB and Django.</p>
               </Fade>
             </div>
             <div className="bio-p-3">
@@ -203,7 +203,7 @@ const About = () => {
             </div>
             <div className="exp-edu-indv">
               <Fade left>
-                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston, School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
+                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
               </Fade>
             </div>
           </div>

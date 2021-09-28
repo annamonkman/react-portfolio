@@ -34,7 +34,7 @@ const Nav = () => {
           </div>
           <div className={splitLocation[1] === 'projects' ? 'active' : ''}>
             <Link className="nav-link-to" to="/projects">
-              Projects,
+              Dev Projects,
             </Link>
           </div>
           <div className={splitLocation[1] === 'art' ? 'active' : ''}>
