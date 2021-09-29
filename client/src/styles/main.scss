@@ -275,7 +275,7 @@ progress {
 
 /** -----------------------------------------------------------------------VARIABLES*/
 
-$nav: #fffef6f6;
+$nav: #fffef0;
 // $nav: #f4f9ff;
 $nav-red: #ffb9b9e3;
 $nav-yellow: #ffd86ede;
@@ -285,7 +285,7 @@ $nav-grey: #cccccce3;
 $nav-light: #ffffffe3;
 $nav-green: #ffffffe3;
 $nav-yellow-green: #eef09ce3;
-$nav-yellow: #eff09cec;
+$nav-yllow: #eff09cec;
 $nav-light-grey: #ffffffe7;
 
 
@@ -347,32 +347,26 @@ body {
 /** -----------------------------------------------------------------------NAV*/
 
 .nav-container {
-  background-color: $nav;
-  height: 30px;
-  margin-top: 0;
+  // background-color: $nav;
   // border: 1px solid red;
-}
-
-.sticky {
-    position: sticky;
-    top: 0;
-}
-
-.nav-container-red {
-  background-color: red;
-  height: 50px;
+  // height: 30px;
   margin-top: 0;
-  // border: 1px solid red;
+  position: sticky;
+  top: 0;
+  z-index: 4;
 }
 
 .nav-links-container {
   // border: 1px solid red;
+  height: auto;
+  background-color: $nav;
   display: flex;
   flex-direction: row;
   font-size: 30px;
 }
 
-.nav-link-to {
+.nav-link {
+  // border: 1px solid red;
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
@@ -382,53 +376,61 @@ body {
   // color: $nav;
   // text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #cccabe;
   }
-.nav-link-to:hover {
-  // background-color: rgba(255, 238, 0, 0.178);
-  // border-radius: 40px;
-  // color: rgb(255, 255, 255);
+.nav-link:hover {
   text-decoration: line-through solid black;
+  text-decoration: underline solid black;
   text-decoration-thickness: 1px;
   text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #ffe600c5, 0 0 4px #ffee00d5;
 }
 .active a {
-  // background-color: rgba(255, 238, 0, 0.178);
-  // border-radius: 40px;
-  // border: 0.5px solid black;
-  // text-decoration-line: underline;
-  // text-decoration-style: solid;
   text-decoration: line-through solid black;
+  text-decoration: underline solid black;
   text-decoration-thickness: 1px;
   color: black;
   // color: $nav;
   // text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #cccabe;
 }
-// .home {
-//   text-decoration: none;
-// }
-// .active .home {
-//   text-decoration: none;
-// }
+
 // .nav-link-logo-div {
-//   margin-right: 8px;
-//   margin-top: 5px;
-//   margin-left: 5px;
 //   color: $nav;
 //   text-shadow: -1px -1px 0px rgb(255, 255, 255), 1px 1px 0px rgb(54, 119, 156);
-//   font-family:'Times New Roman', Times, serif;
 // }
 
+.bars {
+  // border: 1px solid red;
+  color: rgb(61, 61, 61);
+  position: absolute;
+  right: 10px;
+  top: 7px;
+  padding: 5px;
+  display: none;
+}
+
+@media screen and (max-width: 700px) {
+  .bars {
+    display: block;
+  }
+  .nav-links-container {
+    flex-direction: column;
+  }
+  .nav-link {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
 
 /** -----------------------------------------------------------------------DOTS NAV*/
 
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
     /* border: 1px solid green; */
-    height: 5px;
-    background-size: 7px 7px;
+    height: 4px;
+    background-size: 5px 5px;
   }
 
   .dot1 {
     background-image: radial-gradient($nav 85%, transparent 90%);
-    background-position: 3.5px, 0, 0px 0;
+    background-position: 2.5px, 0, 0px 0;
   }
   .dot2 {
     background-image: radial-gradient($nav 80%, transparent 90%);
@@ -436,7 +438,7 @@ body {
   }
   .dot3 {
     background-image: radial-gradient($nav 75%, transparent 90%);
-    background-position: 3.5px, 0, 0px 0;
+    background-position: 2.5px, 0, 0px 0;
   }
   .dot4 {
     background-image: radial-gradient($nav 70%, transparent 85%);
@@ -444,7 +446,7 @@ body {
   }
   .dot5 {
     background-image: radial-gradient($nav 65%, transparent 85%);
-    background-position: 3.5px, 0, 0px 0;
+    background-position: 2.5px, 0, 0px 0;
   }
   .dot6 {
     background-image: radial-gradient($nav 60%, transparent 80%);
@@ -452,7 +454,7 @@ body {
   }
   .dot7 {
     background-image: radial-gradient($nav 55%, transparent 80%);
-    background-position: 3.5px, 0, 0px 0;
+    background-position: 2.5px, 0, 0px 0;
   }
   .dot8 {
     background-image: radial-gradient($nav 50%, transparent 74%);
@@ -460,7 +462,7 @@ body {
   }
   .dot9 {
     background-image: radial-gradient($nav 45%, transparent 70%);
-    background-position: 3.5px, 0, 0px 0;
+    background-position: 2.5px, 0, 0px 0;
   }
   .dot10 {
     background-image: radial-gradient($nav 40%, transparent 65%);
@@ -468,7 +470,7 @@ body {
   }
   .dot11 {
     background-image: radial-gradient($nav 35%, transparent 60%);
-    background-position: 3.5px, 0px, 0px, 0px;
+    background-position: 2.5px, 0px, 0px, 0px;
   }
   .dot12 {
     background-image: radial-gradient($nav 30%, transparent 60%);
@@ -476,7 +478,7 @@ body {
   }
   .dot13 {
     background-image: radial-gradient($nav 25%, transparent 55%);
-    background-position: 3.5px, 0px, 0px, 0px;
+    background-position: 2.5px, 0px, 0px, 0px;
   }
   .dot14 {
     background-image: radial-gradient($nav 20%, transparent 50%);
@@ -484,7 +486,7 @@ body {
   }
   .dot15 {
     background-image: radial-gradient($nav 15%, transparent 45%);
-    background-position: 3.5px, 0px, 0px, 0px;
+    background-position: 2.5px, 0px, 0px, 0px;
   }
   .dot16 {
     background-image: radial-gradient($nav 10%, transparent 40%);
@@ -492,7 +494,7 @@ body {
   }
   .dot17 {
     background-image: radial-gradient($nav 5%, transparent 35%);
-    background-position: 3.5px, 0px, 0px, 0px;
+    background-position: 2.5px, 0px, 0px, 0px;
   }
   .dot18 {
     background-image: radial-gradient($nav 2%, transparent 30%);
@@ -509,16 +511,16 @@ body {
     margin-top: 30px;
     margin-left: 10px;
     color: rgb(0, 0, 0);
-    // background-color: rgba(255, 255, 255, 0.329);
-    // text-transform: uppercase;
   }
   .home-info-text {
     // border: 1px solid red;
     margin: 0 auto;
     max-width: 900px;
     font-size: 30px;
-    // font-style: italic;
-
+  }
+  .home-instructions {
+    // border: 1px solid red;
+    margin-top: 70px;
   }
   .home-info-links {
     // border: 1px solid red;
@@ -527,6 +529,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    cursor: pointer;
   }
   .home-link-indv a{
     // border: 1px solid red;
@@ -558,13 +561,20 @@ body {
     100% {transform: translateX(15px);}
   }
 
+  @media screen and (max-width: 700px) {
+    .home-info-links {
+      flex-direction: column;
+      .home-link-indv {
+        margin-bottom: 5px;
+      }
+    }
+  }
   /** -----------------------------------------------------------------------ABOUT*/
 
   .about-wrapper {
-    // background-color: $nav-grey;
+    // border: 1px solid red;
     margin: 0 auto;
     padding: 15px;
-    // border: 1px solid red;
     font-family: 'Karla', sans-serif;
     font-size: 20px;
   }
@@ -578,9 +588,9 @@ body {
     margin-bottom: 70px;
   }
   .about-sections-title {
+    // border: 1px solid rgb(253, 193, 193);
     text-transform: uppercase;
     display: inline-block;
-    // border: 1px solid rgb(253, 193, 193);
     width: 120px;
   }
 
@@ -641,7 +651,7 @@ body {
       margin: 0 auto;
     }
 }
-.skill-indv-title {
+.skill-indv-text {
   // border: 1px solid black;
   padding: 8px;
   font-size: 14px;
@@ -651,11 +661,6 @@ body {
 
   /** ---------------------------------------------------------About--experience*/
 
-  .exp-edu-wrapper {
-    // border: 1px solid red;
-    margin-bottom: 50px;
-    display: flex;
-  }
   .exp-edu {
     // border: 1px solid rgb(243, 196, 196);
     width: 80%;
@@ -701,13 +706,51 @@ body {
       max-width: 80%;
       // margin: 0 auto;
       display: inline-block;
-      margin: 0 50px;
+      margin: 0 30px;
     }
   }
   .contact-link:hover {
     text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #003cffc5, 0 0 6px #202fffd5;
   }
 
+  /** ----------------------------------------------------------------About----RESPONSIVE*/
+  @media screen and (max-width: 700px) {
+
+    .about-section-wrapper {
+      flex-direction: column;
+    }
+    .about-sections-title {
+      width: 300px;
+      margin-bottom: 20px;
+    }
+    .bio, .bio-p1, .bio-p-2, .bio-p-3, .bio-p-4 {
+      max-width: 100%;
+      margin-left: 0px;
+      font-size: 18px;
+    }
+    .skills, .exp-edu {
+      width: 100%;
+    }
+    .skill-indv-wrapper {
+      width: 60px;
+    }
+    .icon {
+      width: 40px;
+    }
+    .skill-indv-text {
+      padding: 2px;
+    }
+    .exp-edu {
+      font-size: 16px;
+    }
+    .interests-wrapper {
+      flex-direction: column;
+      p, a {
+        max-width: 100%;
+        font-size: 16px;
+      }
+    }
+  }
 
   /** --------------------------------------------------------------------PROJECTS*/
 
@@ -756,12 +799,11 @@ body {
   .project-indv-title {
     // border: 1px solid rgb(255, 0, 0);
     display: inline-block;
-    transform: rotate(-0deg);
     position: relative;
-    left: 80px;
-    top: 20px;
+    left: 60px;
+    top: 10px;
     color: rgb(0, 0, 0);
-    max-width: 220px;
+    max-width: 300px;
     h3 {
       font-size: 22px;
       text-transform: uppercase;
@@ -802,12 +844,13 @@ body {
   display: inline-block;
   // border: 1px solid red;
   font-size: 16px;
+  margin-bottom: 10px;
   a {
     border: 1px solid black;
     margin: 0px 6px;
     // background-color: rgb(68, 68, 68);
     // color: white;
-    padding: 2px;
+    padding: 5px;
     border-radius: 8px;
   }
 }
@@ -820,7 +863,7 @@ body {
 .project-description {
   // border: 1px solid blue;
   display: inline-block;
-  max-width: 50%;
+  width: 50%;
   font-size: 16px;
   p {
     margin: 0;
@@ -832,7 +875,35 @@ body {
   list-style: none;
   margin: 0;
   padding: 0;
-  padding-top: 10px;
+}
+
+@media screen and (max-width: 700px) {
+
+  .projects-intro {
+    font-size: 16px;
+  }
+  .project-indv-title {
+    max-width: 100%;
+    position: inherit;
+    margin-left: 5px;
+    h3 {
+      font-size: 20px;
+    }
+  }
+  .project-video {
+    width: 99%;
+  }
+  .project-indv-info {
+    max-width: 95%;
+  }
+  .project-description-tech-wrapper {
+    flex-direction: column;
+  }
+  .project-description, .project-tech, .project-timeframe {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
 }
 
 
@@ -853,12 +924,30 @@ body {
   .art-info-wrapper {
     // background-color: rgb(241, 241, 241);
     // border: 1px solid red;
-    max-width: 1300px;
+    max-width: 85%;
     // width: 100%;
     margin-left: 20px;
     padding: 5px;
     margin-top: 10px;
     color: white;
+  }
+  .art-title {
+    padding-left: 20px;
+    text-transform: uppercase;
+    font-size: 26px;
+    // border: 1px solid red;
+    margin: 0px;
+    margin-bottom: 20px;
+  }
+  .vimeo-link {
+    color: white;
+    border: 1px solid white;
+    padding: 5px;
+    border-radius: 8px;
+    font-size: 14px;
+    display: inline-block;
+    margin-left: 25px;
+    margin-bottom: 10px;
   }
   .art-gallery-wrapper {
     // background-color:rgb(51, 51, 51);
@@ -867,7 +956,8 @@ body {
   }
   .art-img {
     width: calc(100% - 30vh);
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
     margin-bottom: 20px;
   }
@@ -884,23 +974,18 @@ body {
       // border: 1px solid red;
     }
   }
-  .art-title {
-    padding-left: 20px;
-    text-transform: uppercase;
-    font-size: 26px;
-    // border: 1px solid red;
-    margin: 0px;
-    margin-bottom: 20px;
-  }
-  .art-watch-link {
-    color: white;
-    border: 1px solid white;
-    padding: 5px;
-    border-radius: 8px;
-    font-size: 14px;
-    display: inline-block;
-    margin-left: 25px;
-    margin-bottom: 10px;
+
+  @media screen and (max-width: 700px) {
+    .art-info-wrapper {
+      max-width: 95%;
+      margin: 0 auto;
+    }
+    .art-description, .art-tech {
+      width: 98%;
+    }
+    .art-img {
+      width: 95%;
+    }
   }
 
 

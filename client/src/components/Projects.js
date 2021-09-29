@@ -18,7 +18,7 @@ const Projects = () => {
         <video className="project-video" src={proj1mov} muted loop playsinline autoPlay></video>
         <div className="project-indv-info">
           <div className="project-img-footer">
-            <div className="project-links"><a>Visit Site</a><a>ReadMe</a></div>
+            <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
           </div>
           <div className="project-description-tech-wrapper">
             <div className="project-description">
@@ -51,7 +51,7 @@ const Projects = () => {
         <div className="project-img"></div>
         <div className="project-indv-info">
           <div className="project-img-footer">
-            <div className="project-links"><a>Visit Site</a><a>ReadMe</a></div>
+            <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
           </div>
           <div className="project-description-tech-wrapper">
             <div className="project-description">
@@ -89,7 +89,7 @@ const Projects = () => {
         <div className="project-img"></div>
         <div className="project-indv-info">
           <div className="project-img-footer">
-            <div className="project-links"><a>Visit Site</a><a>ReadMe</a></div>
+            <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
           </div>
           <div className="project-description-tech-wrapper">
             <div className="project-description">
@@ -118,7 +118,7 @@ const Projects = () => {
         <div className="project-img"></div>
         <div className="project-indv-info">
           <div className="project-img-footer">
-            <div className="project-links"><a>Visit Site</a><a>ReadMe</a></div>
+            <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
           </div>
           <div className="project-description-tech-wrapper">
             <div className="project-description">

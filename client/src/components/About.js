@@ -65,93 +65,93 @@ const About = () => {
             <div className="frontend-wrapper">
               <div className="skill-indv-wrapper">
                 <FaHtml5 size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">HTML5</div>
+                <div className="skill-indv-text">HTML5</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaCss3Alt size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">CSS</div>
+                <div className="skill-indv-text">CSS</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaJs size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">JavaScript</div>
+                <div className="skill-indv-text">JavaScript</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaSass size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">SASS</div>
+                <div className="skill-indv-text">SASS</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaReact size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">React (Hooks)</div>
+                <div className="skill-indv-text">React (Hooks)</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaNodeJs size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Node.JS</div>
+                <div className="skill-indv-text">Node.JS</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiMongodb size={55} color="white" className="icon"/> 
-                <div className="skill-indv-title">MongoDB</div>
+                <div className="skill-indv-text">MongoDB</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaPython size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Python</div>
+                <div className="skill-indv-text">Python</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiDjango size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Django</div>
+                <div className="skill-indv-text">Django</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiPostgresql size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">PostgreSQL</div>
+                <div className="skill-indv-text">PostgreSQL</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaYarn size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Yarn</div>
+                <div className="skill-indv-text">Yarn</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaNpm size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Npm</div>
+                <div className="skill-indv-text">Npm</div>
               </div>
               <div className="skill-indv-wrapper">
                 <DiGit size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Git</div>
+                <div className="skill-indv-text">Git</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaGithub size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">GitHub</div>
+                <div className="skill-indv-text">GitHub</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiVisualstudiocode size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">VS Code</div>
+                <div className="skill-indv-text">VS Code</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiNetlify size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Netlify</div>
+                <div className="skill-indv-text">Netlify</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiHeroku size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Heroku</div>
+                <div className="skill-indv-text">Heroku</div>
               </div>
             </div>
             <div className="frontend-wrapper">
               <div className="skill-indv-wrapper">
                 <DiPhotoshop size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Adobe Photoshop</div>
+                <div className="skill-indv-text">Adobe Photoshop</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiAdobepremiere size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Adobe Premiere</div>
+                <div className="skill-indv-text">Adobe Premiere</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiBlender size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Blender</div>
+                <div className="skill-indv-text">Blender</div>
               </div>
               <div className="skill-indv-wrapper">
                 <SiUnrealengine size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Unreal Engine</div>
+                <div className="skill-indv-text">Unreal Engine</div>
               </div>
               <div className="skill-indv-wrapper">
                 <FaFigma size={55} color="white" className="icon"/>
-                <div className="skill-indv-title">Figma</div>
+                <div className="skill-indv-text">Figma</div>
               </div>
             </div>
           </div>
@@ -163,7 +163,7 @@ const About = () => {
         <div className="about-section-wrapper">
           <div className="about-sections-title">
             experience:
-            <p className="exp-more-info">Please find more information about each role on LinkedIn.</p>
+            <p className="exp-more-info">Please find more information about each role on my LinkedIn profile - link at bottom of page.</p>
           </div>
           <div className="exp-edu">
             <div className="exp-edu-indv">

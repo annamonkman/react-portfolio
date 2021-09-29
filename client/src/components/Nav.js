@@ -1,6 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
+import { AiOutlineMenu } from 'react-icons/ai'
+import { useState, useEffect } from 'react'
+
+// import styled from 'styled-components'
 
 // import styles from '../styles/navbar.module.css'
 
@@ -16,33 +20,54 @@ const Nav = () => {
   //JavaScript split method to get the name of the path in array
   const splitLocation = pathname.split('/')
 
+
+  const [toggleMenu, setToggleMenu] = useState(false)
+  const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+
+  const toggleNav = () => {
+    setToggleMenu(!toggleMenu)
+  }
+
+  useEffect(() => {
+    const changeWidth = () => {
+      setScreenWidth(window.innerWidth)
+    }
+    window.addEventListener('resize', changeWidth)
+    return () => {
+      window.removeEventListener('resize', changeWidth)
+    }
+  }, [])
   
   return (
-    <div className="sticky">
-      <div className="nav-container">
-        <div className="nav-links-container">
-          {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
-          <div className={splitLocation[1] === '' ? 'active' : ''}>
-            <Link className="nav-link-to home" to="/">
-              A{'/'}M, 
-            </Link>
-          </div>
-          <div className={splitLocation[1] === 'about' ? 'active' : ''}>
-            <Link className="nav-link-to" to="/about">
-              About,
-            </Link>
-          </div>
-          <div className={splitLocation[1] === 'projects' ? 'active' : ''}>
-            <Link className="nav-link-to" to="/projects">
-              Dev Projects,
-            </Link>
-          </div>
-          <div className={splitLocation[1] === 'art' ? 'active' : ''}>
-            <Link className="nav-link-to" to="/art">
-              Art,
-            </Link>
-          </div>
-        </div>
+    <div className="nav-container">
+      <div className="nav-links-container">
+        {(toggleMenu || screenWidth > 700) && (
+          <>
+            <div className={splitLocation[1] === '' ? 'active' : ''}>
+              <Link className="nav-link home-link" to="/">
+                A{'/'}M, 
+              </Link>
+            </div>
+            <div className={splitLocation[1] === 'about' ? 'active' : ''}>
+              <Link className="nav-link" to="/about">
+                About,
+              </Link>
+            </div>
+            <div className={splitLocation[1] === 'projects' ? 'active' : ''}>
+              <Link className="nav-link" to="/projects">
+                Dev Projects,
+              </Link>
+            </div>
+            <div className={splitLocation[1] === 'art' ? 'active' : ''}>
+              <Link className="nav-link" to="/art">
+                Film & 3D,
+              </Link>
+            </div>
+          </>
+        )}
+        {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
+        
+        <AiOutlineMenu size={25} className="bars" onClick={toggleNav}/>
       </div>
       <div className="dot-home">
         <div className="dot1"></div>

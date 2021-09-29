@@ -59,7 +59,7 @@ const Art = () => {
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>The Desk, 2019</h3>
-          <a className="art-watch-link" href="https://vimeo.com/377504425" target="_blank" rel="noreferrer">Vimeo</a>
+          <a className="vimeo-link" href="https://vimeo.com/377504425" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from a film I made in my 3rd Year at Goldsmiths, University of London. Shown in my Degree Show in June 2019.</p></div>
           <div className="art-tech"><p>Made using Blender. Most Assets made by me with a few purchased online.</p></div>
         </div>
@@ -78,7 +78,7 @@ const Art = () => {
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>Degree Show Installation, 2019</h3>
-          <a className="art-watch-link" href="https://vimeo.com/382315360" target="_blank" rel="noreferrer">Vimeo</a>
+          <a className="vimeo-link" href="https://vimeo.com/382315360" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description">
             <p>The installation of my film &apos;The Desk&apos; for my BA Fine Art Degree Show in June 2019.</p>
             <p>My work was installed in Laurie Grove Baths, Goldsmiths College, University of London. </p>
@@ -99,7 +99,7 @@ const Art = () => {
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>The Knight, 2017</h3>
-          <a className="art-watch-link" href="https://vimeo.com/377506548" target="_blank" rel="noreferrer">Vimeo</a>
+          <a className="vimeo-link" href="https://vimeo.com/377506548" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from a film I made in my 1st Year at Goldsmiths, University of London.</p></div>
           <div className="art-tech"><p>Found images collaged together in Adobe Photoshop. Edited with Adobe Premiere and After Effects. Greenscreen footage shot by me. With thanks to Will Herbert as the knight. </p></div>
         </div>
