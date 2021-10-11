@@ -275,9 +275,11 @@ progress {
 
 /** -----------------------------------------------------------------------VARIABLES*/
 
-$nav: #fffef0;
-// $nav: #f4f9ff;
+$nav-blueish: #f4f9ff;
+$nav-greenish: #f3fff0;
+$nav: #fffdee;
 $nav-red: #ffb9b9e3;
+$nav-pink: #ffb0ca;
 $nav-yellow: #ffd86ede;
 $nav-orange: #f3bfb2e0;
 $nav-blue: #66d9ff;
@@ -308,7 +310,11 @@ a {
 // }
 
 body {
-  background-color: rgb(193, 196, 204);
+  background-color: rgb(167, 174, 194);
+  // background-color: rgb(230, 230, 230);
+  // background-color-pinkish: rgb(215, 206, 218);
+  // background-color: rgb(226, 229, 235);
+
   // background-color: rgb(209, 208, 203);
   // background-color: #ffffff;
   background-image: url("../assets/papertex.png");
@@ -370,23 +376,26 @@ body {
   margin-right: 8px;
   margin-top: 5px;
   margin-left: 5px;
-  font-family: 'Segment', sans-serif;
+  font-family: serif;
   font-size: 28px;
-  color: rgb(124, 124, 124);
+  color: rgb(255, 188, 255);
+  color: rgb(181, 187, 207);
+  // color: rgb(243, 243, 243);
   // color: $nav;
   // text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #cccabe;
   }
 .nav-link:hover {
   text-decoration: line-through solid black;
-  text-decoration: underline solid black;
+  text-decoration: underline solid rgb(255, 188, 255);
+  text-decoration: underline solid rgb(181, 187, 207);
   text-decoration-thickness: 1px;
-  text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 3px #ffe600c5, 0 0 4px #ffee00d5;
+  // text-shadow: 0 0 2px #fff, 0 0 2px #fff, 0 0 4px #ffe600d0, 0 0 6px #ffee00da;
 }
 .active a {
   text-decoration: line-through solid black;
   text-decoration: underline solid black;
   text-decoration-thickness: 1px;
-  color: black;
+  color: rgb(61, 61, 61);
   // color: $nav;
   // text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #cccabe;
 }
@@ -424,142 +433,95 @@ body {
 
 .dot1, .dot2, .dot3, .dot4, .dot5, .dot6, .dot7, .dot8, .dot9, .dot10, .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
     /* border: 1px solid green; */
-    height: 4px;
-    background-size: 5px 5px;
+    height: 5px;
+    background-size: 6px 6px;
   }
 
   .dot1 {
-    background-image: radial-gradient($nav 85%, transparent 90%);
-    background-position: 2.5px, 0, 0px 0;
+    background-image: radial-gradient($nav 75%, transparent 90%);
+    background-position: 3px, 0, 0px 0;
   }
   .dot2 {
-    background-image: radial-gradient($nav 80%, transparent 90%);
+    background-image: radial-gradient($nav 70%, transparent 90%);
     background-position: 0px, 0, 0px 0;
   }
   .dot3 {
-    background-image: radial-gradient($nav 75%, transparent 90%);
-    background-position: 2.5px, 0, 0px 0;
+    background-image: radial-gradient($nav 65%, transparent 90%);
+    background-position: 3px, 0, 0px 0;
   }
   .dot4 {
-    background-image: radial-gradient($nav 70%, transparent 85%);
+    background-image: radial-gradient($nav 60%, transparent 85%);
     background-position: 0px, 0, 0px 0;
   }
   .dot5 {
-    background-image: radial-gradient($nav 65%, transparent 85%);
-    background-position: 2.5px, 0, 0px 0;
+    background-image: radial-gradient($nav 55%, transparent 85%);
+    background-position: 3px, 0, 0px 0;
   }
   .dot6 {
-    background-image: radial-gradient($nav 60%, transparent 80%);
+    background-image: radial-gradient($nav 50%, transparent 80%);
     background-position: 0px, 0, 0px 0;
   }
   .dot7 {
-    background-image: radial-gradient($nav 55%, transparent 80%);
-    background-position: 2.5px, 0, 0px 0;
+    background-image: radial-gradient($nav 45%, transparent 80%);
+    background-position: 3px, 0, 0px 0;
   }
   .dot8 {
-    background-image: radial-gradient($nav 50%, transparent 74%);
+    background-image: radial-gradient($nav 40%, transparent 74%);
     background-position: 0px, 0, 0px 0;
   }
   .dot9 {
-    background-image: radial-gradient($nav 45%, transparent 70%);
-    background-position: 2.5px, 0, 0px 0;
+    background-image: radial-gradient($nav 35%, transparent 70%);
+    background-position: 3px, 0, 0px 0;
   }
   .dot10 {
-    background-image: radial-gradient($nav 40%, transparent 65%);
+    background-image: radial-gradient($nav 30%, transparent 65%);
     background-position: 0px, 0, 0px 0;
   }
   .dot11 {
-    background-image: radial-gradient($nav 35%, transparent 60%);
-    background-position: 2.5px, 0px, 0px, 0px;
+    background-image: radial-gradient($nav 25%, transparent 60%);
+    background-position: 3px, 0px, 0px, 0px;
   }
   .dot12 {
-    background-image: radial-gradient($nav 30%, transparent 60%);
+    background-image: radial-gradient($nav 20%, transparent 60%);
     background-position: 0px, 0px, 0px, 0px;
   }
   .dot13 {
-    background-image: radial-gradient($nav 25%, transparent 55%);
-    background-position: 2.5px, 0px, 0px, 0px;
+    background-image: radial-gradient($nav 15%, transparent 55%);
+    background-position: 3px, 0px, 0px, 0px;
   }
   .dot14 {
-    background-image: radial-gradient($nav 20%, transparent 50%);
+    background-image: radial-gradient($nav 11%, transparent 50%);
     background-position: 0px, 0px, 0px, 0px;
   }
   .dot15 {
-    background-image: radial-gradient($nav 15%, transparent 45%);
-    background-position: 2.5px, 0px, 0px, 0px;
+    background-image: radial-gradient($nav 8%, transparent 45%);
+    background-position: 3px, 0px, 0px, 0px;
   }
   .dot16 {
-    background-image: radial-gradient($nav 10%, transparent 40%);
+    background-image: radial-gradient($nav 6%, transparent 40%);
     background-position: 0px, 0px, 0px, 0px;
   }
   .dot17 {
-    background-image: radial-gradient($nav 5%, transparent 35%);
-    background-position: 2.5px, 0px, 0px, 0px;
+    background-image: radial-gradient($nav 3%, transparent 35%);
+    background-position: 3px, 0px, 0px, 0px;
   }
   .dot18 {
-    background-image: radial-gradient($nav 2%, transparent 30%);
+    background-image: radial-gradient($nav 1%, transparent 30%);
     background-position: 0px, 0px, 0px, 0px;
   }
 
 /** -----------------------------------------------------------------------HOME*/
-  .home-info {
-    // border: 1px solid red;
-    // margin: 0 auto;
-    max-width: 900px;
-    padding: 5px 60px 5px 40px;
-    font-family: 'Karla', sans-serif;
-    margin-top: 30px;
-    margin-left: 10px;
-    color: rgb(0, 0, 0);
-  }
-  .home-info-text {
-    // border: 1px solid red;
-    margin: 0 auto;
-    max-width: 900px;
-    font-size: 30px;
-  }
-  .home-instructions {
-    // border: 1px solid red;
-    margin-top: 70px;
-  }
-  .home-info-links {
-    // border: 1px solid red;
-    max-width: 500px;
-    margin-bottom: 20px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    cursor: pointer;
-  }
-  .home-link-indv a{
-    // border: 1px solid red;
-    display: inline-block;
-    margin-right: 50px;
-    font-size: 20px;
-    color: rgb(0, 0, 0);
-  }
-  .home-link-indv a:hover {
-    text-shadow: 0 0 2px #fff, 0 0 4px #fff, 0 0 5px #ff0000c5, 0 0 6px #ff0000d5;
-  }
-  .home-instructions {
-    font-size: 20px;
-  }
-  .link-icon {
-    font-family: 'EB Garamond', serif;
-    display: inline-block;
-    // border: 1px solid red;
-    margin-right: 20px;
-    animation-name: pointer;
-    animation-duration: 0.4s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-    animation-timing-function: linear;
-    color: white;
-  }
-  @keyframes pointer {
-    0% {transform: translateX(0px);}
-    100% {transform: translateX(15px);}
-  }
+  
+.home-div {
+  background-color: rgba(221, 197, 197, 0.171);
+  border: 1px solid grey;
+  margin: 0 auto;
+  height: 400px;
+  width: 700px;
+  position: absolute;
+  top: 50px;
+  left: 100px;
+}
 
   @media screen and (max-width: 700px) {
     .home-info-links {
@@ -599,7 +561,7 @@ body {
   .bio {
     // border: 1px solid green;
     display: inline-block;
-    max-width: 85%;
+    max-width: 90%;
   }
   .bio-p-1, .bio-p-2, .bio-p-3, .bio-p-4 {
     // border: 1px solid green;
@@ -608,18 +570,6 @@ body {
       margin-top: 0;
       margin-bottom: 10px;
     }
-  }
-  .bio-p-1 {
-    margin-left: 0px;
-  }
-  .bio-p-2 {
-    margin-left: 30px;
-  }
-  .bio-p-3 {
-    margin-left: 60px;
-  }
-  .bio-p-4 {
-    margin-left: 90px;
   }
 
 
@@ -679,7 +629,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid rgb(0, 0, 0);
     margin-bottom: 15px;
   }
   .exp-detail {
@@ -781,20 +731,21 @@ body {
     // margin-bottom: 200px;
     // background-color: rgb(247, 247, 247);
     padding-bottom: 70px;
+    border-top: 1px solid black;
   }
 
-  .p4 {
-    background-color: rgba(247, 245, 245, 0.637);
+  .p4, .p2 {
+    background-color: rgba(255, 255, 255, 0.13);
   }
-  .p3 {
-    background-color: rgba(228, 220, 220, 0.63);
-  }
-  .p2 {
-    background-color: rgba(234, 237, 240, 0.616);
-  }
-  .p1 {
-    background-color: rgba(223, 219, 215, 0.603);
-  }
+  // .p3 {
+  //   background-color: rgba(228, 220, 220, 0.63);
+  // }
+  // .p2 {
+  //   background-color: rgba(234, 237, 240, 0.616);
+  // }
+  // .p1 {
+  //   background-color: rgba(223, 219, 215, 0.603);
+  // }
 
   .project-indv-title {
     // border: 1px solid rgb(255, 0, 0);
@@ -912,9 +863,10 @@ body {
   .art-wrapper {
     font-family: 'Karla', sans-serif;
     font-size: 18px;
+    background-color: rgba(0, 0, 0, 0.973);
   }
   .art-proj-wrapper {
-    background-color: rgba(0, 0, 0, 0.918);
+    // background-color: rgba(166, 166, 179, 0.918);
     margin: 0 auto;
     // margin-bottom: 300px;
     width: 100%;
@@ -929,7 +881,7 @@ body {
     margin-left: 20px;
     padding: 5px;
     margin-top: 10px;
-    color: white;
+    color: rgb(255, 255, 255);
   }
   .art-title {
     padding-left: 20px;
@@ -1088,7 +1040,7 @@ body {
     display: none;
   }
   .nav-container {
-    height: 40px;
+    height: 30px;
   }
 
 }}
@@ -1169,7 +1121,7 @@ body {
 // .dot17 {
 //   background-image: radial-gradient($nav 5%, transparent 35%);
 //   background-position: 5px, 0px, 0px, 0px;
-// }
+// }s
 // .dot18 {
 //   background-image: radial-gradient($nav 2%, transparent 30%);
 //   background-position: 0px, 0px, 0px, 0px;

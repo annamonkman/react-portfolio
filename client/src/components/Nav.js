@@ -45,7 +45,7 @@ const Nav = () => {
           <>
             <div className={splitLocation[1] === '' ? 'active' : ''}>
               <Link className="nav-link home-link" to="/">
-                A{'/'}M, 
+                Home, 
               </Link>
             </div>
             <div className={splitLocation[1] === 'about' ? 'active' : ''}>
