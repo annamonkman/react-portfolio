@@ -537,7 +537,7 @@ body {
   position: absolute;
   top: 2px;
   left: 0px;
-  // z-index: 0;
+  z-index: 1;
 }
 .home-info {
   position: fixed;
@@ -545,7 +545,7 @@ body {
   left: 100px;
   text-align: right;
   width: 90%;
-  z-index: 1;
+  z-index: 2;
   p {
     font-size: 60px;
     font-family: 'Array', sans-serif;

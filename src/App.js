@@ -33,7 +33,7 @@ const App = () => {
   return (
 
     <div style={
-      { backgroundColor: location.pathname === '/art' ? '#1C1C1C' : 'transparent' }
+      { backgroundColor: location.pathname === '/art' ? '#151515' : 'transparent' }
       // { backgroundImage: location.pathname === '/art' ? 'none' : 'url("../assets/papertex.png")' }
     }>
       <Nav />
