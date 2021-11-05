@@ -1,6 +1,9 @@
 import React from 'react'
 
 import proj1mov from '../assets/proj1mov.mov'
+import proj2mov from '../assets/proj2mov.mov'
+import proj3mov from '../assets/proj3mov.mov'
+import proj4mov from '../assets/proj4mov.mov'
 
 const Projects = () => {
   return (
@@ -13,9 +16,9 @@ const Projects = () => {
 
       <div className="project-indv-wrapper p4">
         <div className="project-indv-title">
-          <h3><span className="dot"></span>Project 4:   Carousel Collective</h3>
+          <h3><span className="dot"></span>Project 4: Carousel Collective</h3>
         </div>
-        <video className="project-video" src={proj1mov} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={proj4mov} muted loop playsinline autoPlay></video>
         <div className="project-indv-info">
           <div className="project-img-footer">
             <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
@@ -48,7 +51,7 @@ const Projects = () => {
         <div className="project-indv-title">
           <h3><span className="dot"></span>Project 3:   Festivalist</h3>
         </div>
-        <div className="project-img"></div>
+        <video className="project-video" src={proj3mov} muted loop playsinline autoPlay></video>
         <div className="project-indv-info">
           <div className="project-img-footer">
             <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
@@ -86,7 +89,7 @@ const Projects = () => {
         <div className="project-indv-title">
           <h3><span className="dot"></span>Project 2:   StarTrumps</h3>
         </div>
-        <div className="project-img"></div>
+        <video className="project-video" src={proj2mov} muted loop playsinline autoPlay></video>
         <div className="project-indv-info">
           <div className="project-img-footer">
             <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>
@@ -115,7 +118,7 @@ const Projects = () => {
         <div className="project-indv-title">
           <h3><span className="dot"></span>Project 1:   Frogger</h3>
         </div>
-        <div className="project-img"></div>
+        <video className="project-video" src={proj1mov} muted loop playsinline autoPlay></video>
         <div className="project-indv-info">
           <div className="project-img-footer">
             <div className="project-links"><a>Visit Site &gt;</a><a>ReadMe &gt;</a></div>

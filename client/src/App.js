@@ -1,15 +1,41 @@
-import React from 'react'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import React, { useEffect } from 'react'
+import { Switch, Route, useLocation } from 'react-router-dom'
 import Home from './components/Home'
 import Nav from './components/Nav'
 import About from './components/About'
 import Projects from './components/Projects'
 import Art from './components/Art'
 
+
+
+
 const App = () => {
 
+  const location = useLocation()
+  console.log('LOCATION', useLocation())
+
+  useEffect(() => {
+    const currentPath = location.pathname
+    console.log('current path', currentPath)
+    const searchParams = new URLSearchParams(location.search)
+    console.log('search params', searchParams)
+  }, [location])
+
+  // useEffect(()=> {
+  //   { 
+  //     if (location.pathname === '/art'){
+  //     // Change background color
+  //     }
+  //   }
+  // }, [location])
+
+
   return (
-    <BrowserRouter>
+
+    <div style={
+      { backgroundColor: location.pathname === '/art' ? '#1C1C1C' : 'transparent' }
+      // { backgroundImage: location.pathname === '/art' ? 'none' : 'url("../assets/papertex.png")' }
+    }>
       <Nav />
       <Switch>
         <Route exact path="/">
@@ -31,8 +57,10 @@ const App = () => {
           <Projects />
         </Route>
       </Switch>
-    </BrowserRouter>
+    </div>
+
   )
+
 }
 
 export default App

@@ -163,14 +163,9 @@ const About = () => {
         <div className="about-section-wrapper">
           <div className="about-sections-title">
             experience:
-            <p className="exp-more-info">Please find more information about each role on my LinkedIn profile - link at bottom of page.</p>
+            <p className="exp-more-info">Please find more information about each role on my <a className="contact-link" href="https://www.linkedin.com/in/anna-monkman/" target="_blank" rel='noreferrer'>LinkedIn.</a></p>
           </div>
           <div className="exp-edu">
-            <div className="exp-edu-indv">
-              <Fade left>
-                <div className="exp-detail">Supermarket Assistant</div><div className="exp-detail">Waitrose, Godalming</div><div className="exp-detail">PT Nov 2020 - Current</div>
-              </Fade>
-            </div>
             <div className="exp-edu-indv">
               <Fade left>
                 <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
@@ -179,6 +174,11 @@ const About = () => {
             <div className="exp-edu-indv">
               <Fade left>
                 <div className="exp-detail">Work Placement</div><div className="exp-detail">Furtherfield Gallery, London</div><div className="exp-detail">May 2019 - Oct 2019</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Art Trainee</div><div className="exp-detail">Bold Tendencies, London</div><div className="exp-detail">Jul 2018 - Aug 2018</div>
               </Fade>
             </div>
           </div>
@@ -203,7 +203,7 @@ const About = () => {
             </div>
             <div className="exp-edu-indv">
               <Fade left>
-                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston School of Art</div><div className="exp-detail">Sept 2015 - June 2016</div>
+                <div className="exp-detail">Foundation Diploma in Art & Design</div><div className="exp-detail">Kingston School of Art</div><div className="exp-detail">Sept 2015 - June 2016 (Distinction)</div>
               </Fade>
             </div>
           </div>
@@ -219,12 +219,11 @@ const About = () => {
           <div className="interests-wrapper">
             <div className="about-sections-title">Credits:</div>
             <p>Site designed and developed by Anna Monkman.</p>
-            <p>using typefaces segment by .. and ...</p>
           </div>
 
           <div className="interests-wrapper">
             <div className="about-sections-title">Contact:</div>
-            <p className="contact-link">annamonkman@me.com</p>
+            <a className="contact-link" href = "mailto: annamonkman@me.com">Email: annamonkman@me.com</a>
             <a className="contact-link" href="https://www.linkedin.com/in/anna-monkman/" target="_blank" rel='noreferrer'>LinkedIn</a>
             <a className="contact-link" href="https://github.com/annamonkman" target="_blank" rel='noreferrer'>Github</a>
           </div>
