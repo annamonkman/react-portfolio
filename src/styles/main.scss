@@ -292,7 +292,7 @@ $nav-light-grey: #ffffffe7;
 // $nav: #fffdecec;
 
 
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700&family=Karla:wght@300;400;500;600;700&family=Lato:wght@100;300;400;700;900&family=Lora:wght@400;500;600;700&family=Merriweather:wght@300;400;700&display=swap');
 
 @import url('https://api.fontshare.com/css?f[]=segment@400&f[]=array@600&f[]=pencerio@50&display=swap');
 
@@ -394,9 +394,10 @@ body {
   // text-shadow: -1px -1px 0px #ffffff, 1px 1px 0px #cccabe;
   }
 .nav-link:hover {
-  text-decoration: line-through solid black;
-  text-decoration: underline solid rgb(29, 29, 29);
-  text-decoration: underline solid rgb(255, 133, 208);
+  text-decoration: line-through solid rgb(255, 113, 212);
+  // text-decoration: underline solid rgb(29, 29, 29);
+  // text-decoration: underline solid rgb(255, 133, 208);
+  // color: rgb(255, 113, 212);
   // text-decoration: underline solid rgb(255, 211, 89);
   // text-decoration: underline solid rgb(181, 187, 207);
   text-decoration-thickness: 1px;
@@ -876,7 +877,7 @@ body {
     font-size: 14px;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1300px) {
   .project-indv-wrapper {
     display: flex;
     flex-direction: row;

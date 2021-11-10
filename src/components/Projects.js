@@ -1,9 +1,9 @@
 import React from 'react'
 
-import proj1mov from '../assets/proj1mov.mov'
-import proj2mov from '../assets/proj2mov.mov'
-import proj3mov from '../assets/proj3mov.mov'
-import proj4mov from '../assets/proj4mov.mov'
+import proj1mov from '../assets/proj1mov.mp4'
+import proj2mov from '../assets/proj2mov.mp4'
+import proj3mov from '../assets/proj3mov.mp4'
+import proj4mov from '../assets/proj4mov.mp4'
 
 import { FiExternalLink } from 'react-icons/fi'
 import { MdSubdirectoryArrowRight } from 'react-icons/md'
