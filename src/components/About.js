@@ -212,6 +212,10 @@ const About = () => {
         
         <div className="interests-credits-wrapper">
           <div className="interests-wrapper">
+            <div className="about-sections-title">Awards:</div>
+            <p>Special Judge&apos;s Prize - Wells Art Contemporary Award  </p>
+          </div>
+          <div className="interests-wrapper">
             <div className="about-sections-title">Interests:</div>
             <p>My interests include fashion, photography, design, cooking, contemporary art, film, and the crossovers of all of these. </p>
           </div>
