@@ -213,7 +213,7 @@ const About = () => {
         <div className="interests-credits-wrapper">
           <div className="interests-wrapper">
             <div className="about-sections-title">Awards:</div>
-            <p>Special Judge&apos;s Prize - Wells Art Contemporary Award  </p>
+            <p>Special Judge&apos;s Prize - Wells Art Contemporary Award - 2016 </p>
           </div>
           <div className="interests-wrapper">
             <div className="about-sections-title">Interests:</div>
