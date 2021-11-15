@@ -27,6 +27,16 @@ import knight01 from '../assets/art/knight01.jpg'
 import knight02 from '../assets/art/knight02.jpg'
 import knight03 from '../assets/art/knight03.jpg'
 
+import line01 from '../assets/art/line01.jpg'
+import line02 from '../assets/art/line02.jpg'
+import line03 from '../assets/art/line03.jpg'
+import line04 from '../assets/art/line04.jpg'
+
+import wac01 from '../assets/art/wac01.jpg'
+import wac02 from '../assets/art/wac02.jpg'
+// import wac03 from '../assets/art/wac03.jpg'
+
+
 
 
 const Art = () => {
@@ -37,7 +47,7 @@ const Art = () => {
         
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
-          <h3 className="art-title"><span className="dot art-dot"></span>Commission for artist Christopher Bond, 2021</h3>
+          <h3 className="art-title"><span className="dot art-dot"></span>Commission for artist Christopher Bond, 2020</h3>
           <div className="art-description">
             <p>I was commissioned to model an unmade bed with wetness on the covers for a film that Bond is working on.</p>
             <p>A short description of the work from Christopher Bond: </p>
@@ -98,6 +108,21 @@ const Art = () => {
 
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
+          <h3 className="art-title"><span className="dot art-dot"></span>The Line, 2018</h3>
+          <a className="vimeo-link" href="https://vimeo.com/259862330" target="_blank" rel="noreferrer">Vimeo &gt;</a>
+          <div className="art-description"><p>Screenshots from two versions of a film reflecting on the Greenwich Meridian Line and temporality. </p></div>
+          <div className="art-tech"><p>Edited using Adobe Premiere. Footage shot by me. Costume by me.</p></div>
+        </div>
+        <div className="art-gallery-wrapper">
+          <img className="art-img" src={line04} alt="screenshot from film 'The Line'"/>
+          <img className="art-img" src={line01} alt="screenshot from film 'The Line'"/>
+          <img className="art-img" src={line03} alt="screenshot from film 'The Line'"/>
+          <img className="art-img" src={line02} alt="screenshot from film 'The Line'"/>
+        </div>
+      </div>
+
+      <div className="art-proj-wrapper">
+        <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>The Knight, 2017</h3>
           <a className="vimeo-link" href="https://vimeo.com/377506548" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from a film I made in my 1st Year at Goldsmiths, University of London.</p></div>
@@ -107,6 +132,19 @@ const Art = () => {
           <img className="art-img" src={knight01} alt="screenshot from film 'The Knight'"/>
           <img className="art-img" src={knight02} alt="screenshot from film 'The Knight'"/>
           <img className="art-img" src={knight03} alt="screenshot from film 'The Knight'"/>
+        </div>
+      </div>
+
+      <div className="art-proj-wrapper">
+        <div className="art-info-wrapper">
+          <h3 className="art-title"><span className="dot art-dot"></span>Boy, 2016</h3>
+          <a className="vimeo-link" href="https://vimeo.com/382305597" target="_blank" rel="noreferrer">Vimeo &gt;</a>
+          <div className="art-description"><p>Two oil paitings and looped film based on a found photograph of a boy from late 17th or early 18th century. </p></div>
+          <div className="art-tech"><p>This work was awarded the Special Judge&apos;s Prize at Wells Art Contemporary Competition, 2016.  </p></div>
+        </div>
+        <div className="art-gallery-wrapper">
+          <img className="art-img" src={wac02} alt="photograph of installation"/>
+          <img className="art-img" src={wac01} alt="photograph of installation"/>
         </div>
       </div>
 
