@@ -1,8 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { useLocation } from 'react-router-dom'
-import { AiOutlineMenu } from 'react-icons/ai'
 import { useState, useEffect } from 'react'
+
+import { AiOutlineMenu } from 'react-icons/ai'
+// import { FaTimes } from 'react-icons/fa'
+// import { Squash as Hamburger } from 'hamburger-react'
+
 
 // import styled from 'styled-components'
 
@@ -22,7 +26,9 @@ const Nav = () => {
 
 
   const [toggleMenu, setToggleMenu] = useState(false)
+  // const [toggleBars, setToggleBars] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
+  // const [isOpen, setOpen] = useState()
 
   const toggleNav = () => {
     setToggleMenu(!toggleMenu)
@@ -64,11 +70,11 @@ const Nav = () => {
               </Link>
             </div>
           </>
+          
         )}
-        {/* Checking the current path name using javascript ternary operator and if true adding active classname to it */}
-        
         <AiOutlineMenu size={25} className="bars" onClick={toggleNav}/>
       </div>
+
       <div className="dot-home">
         <div className="dot1"></div>
         <div className="dot2"></div>
