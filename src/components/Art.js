@@ -111,7 +111,7 @@ const Art = () => {
           <h3 className="art-title"><span className="dot art-dot"></span>The Line, 2018</h3>
           <a className="vimeo-link" href="https://vimeo.com/259862330" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from two versions of a film reflecting on the Greenwich Meridian Line and temporality. </p></div>
-          <div className="art-tech"><p>Edited using Adobe Premiere. Footage shot by me. Costume by me.</p></div>
+          <div className="art-tech"><p>Edited using Adobe Premiere. Footage shot by me. Costume & script by me.</p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={line04} alt="screenshot from film 'The Line'"/>
@@ -140,7 +140,7 @@ const Art = () => {
           <h3 className="art-title"><span className="dot art-dot"></span>Boy, 2016</h3>
           <a className="vimeo-link" href="https://vimeo.com/382305597" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Two oil paitings and looped film based on a found photograph of a boy from late 17th or early 18th century. </p></div>
-          <div className="art-tech"><p>This work was awarded the Special Judge&apos;s Prize at Wells Art Contemporary Competition, 2016.  </p></div>
+          <div className="art-tech"><p>This work was awarded the Special Judge&apos;s Prize at Wells Art International Contemporary Competition, 2016.  </p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={wac02} alt="photograph of installation"/>

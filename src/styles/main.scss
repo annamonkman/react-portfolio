@@ -1008,102 +1008,88 @@ body {
 
 @media not all and (min-resolution:.001dpcm)
 { @supports (-webkit-appearance:none) and (stroke-color:transparent) {
-  // .dot1 {
-  //   background-image: radial-gradient($nav 85%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot2 {
-  //   background-image: radial-gradient($nav 80%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot3 {
-  //   background-image: radial-gradient($nav 75%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot4 {
-  //   background-image: radial-gradient($nav 70%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot5 {
-  //   background-image: radial-gradient($nav 65%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot6 {
-  //   background-image: radial-gradient($nav 60%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot7 {
-  //   background-image: radial-gradient($nav 55%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot8 {
-  //   background-image: radial-gradient($nav 54%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot9 {
-  //   background-image: radial-gradient($nav 45%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot10 {
-  //   background-image: radial-gradient($nav 40%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0, 0px 0;
-  //   background-size: 10px 10px;
-  // }
-  // .dot11 {
-  //   background-image: radial-gradient($nav 35%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot12 {
-  //   background-image: radial-gradient($nav 30%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot13 {
-  //   background-image: radial-gradient($nav 25%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot14 {
-  //   background-image: radial-gradient($nav 20%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot15 {
-  //   background-image: radial-gradient($nav 15%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot16 {
-  //   background-image: radial-gradient($nav 10%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot17 {
-  //   background-image: radial-gradient($nav 5%, rgba(255, 255, 255, 0));
-  //   background-position: 5px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  // .dot18 {
-  //   background-image: radial-gradient($nav 2%, rgba(255, 255, 255, 0));
-  //   background-position: 0px, 0px, 0px, 0px;
-  //   background-size: 10px 10px;
-  // }
-  .dot-home {
+  .dot11, .dot12, .dot13, .dot14, .dot15, .dot16, .dot17, .dot18 {
+    /* border: 1px solid green; */
     display: none;
   }
-  .nav-container {
-    height: 30px;
+  .dot1 {
+    background-image: radial-gradient($nav 75%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0, 0px 0;
   }
+  .dot2 {
+    background-image: radial-gradient($nav 65%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0, 0px 0;
+  }
+  .dot3 {
+    background-image: radial-gradient($nav 60%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0, 0px 0;
+  }
+  .dot4 {
+    background-image: radial-gradient($nav 51%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0, 0px 0;
+  }
+  .dot5 {
+    background-image: radial-gradient($nav 45%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0, 0px 0;
+  }
+  .dot6 {
+    background-image: radial-gradient($nav 35%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0, 0px 0;
+  }
+  .dot7 {
+    background-image: radial-gradient($nav 28%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0, 0px 0;
+  }
+  .dot8 {
+    background-image: radial-gradient($nav 15%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0, 0px 0;
+  }
+  .dot9 {
+    background-image: radial-gradient($nav 8%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0, 0px 0;
+  }
+  .dot10 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0, 0px 0;
+  }
+  .dot11 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0px, 0px, 0px;
+  }
+  .dot12 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0px, 0px, 0px;
+  }
+  .dot13 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0px, 0px, 0px;
+  }
+  .dot14 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0px, 0px, 0px;
+  }
+  .dot15 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0px, 0px, 0px;
+  }
+  .dot16 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0px, 0px, 0px;
+  }
+  .dot17 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 2.5px, 0px, 0px, 0px;
+  }
+  .dot18 {
+    background-image: radial-gradient($nav 1%, rgba(161, 164, 173, 0));
+    background-position: 0px, 0px, 0px, 0px;
+  }
+  // .dot-home {
+  //   display: none;
+  // }
+  // .nav-container {
+  //   height: 30px;
+  // }
 
 }}
 
