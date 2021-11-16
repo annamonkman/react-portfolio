@@ -71,7 +71,7 @@ const Art = () => {
           <h3 className="art-title"><span className="dot art-dot"></span>The Desk, 2019</h3>
           <a className="vimeo-link" href="https://vimeo.com/377504425" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from a film I made in my 3rd Year at Goldsmiths, University of London. Shown in my Degree Show in June 2019.</p></div>
-          <div className="art-tech"><p>Made using Blender. Most Assets made by me with a few purchased online.</p></div>
+          <div className="art-tech"><p>Made using Blender. Most Assets made by Anna Monkman with a few purchased online.</p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={desk03} alt="screenshot from film 'The Desk' opening title"/>
@@ -93,7 +93,7 @@ const Art = () => {
             <p>The installation of my film &apos;The Desk&apos; for my BA Fine Art Degree Show in June 2019.</p>
             <p>My work was installed in Laurie Grove Baths, Goldsmiths College, University of London. </p>
           </div>
-          <div className="art-tech"><p>Temporary Paper ceiling and upholstered metal bench made by me with help from Corrine Chan. </p></div>
+          <div className="art-tech"><p>Temporary Paper ceiling and upholstered metal bench made by Anna Monkman with help from Corrine Chan. </p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={ds01} alt="image of degree show installation of the Desk 2019"/>
@@ -110,8 +110,8 @@ const Art = () => {
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>The Line, 2018</h3>
           <a className="vimeo-link" href="https://vimeo.com/259862330" target="_blank" rel="noreferrer">Vimeo &gt;</a>
-          <div className="art-description"><p>Screenshots from two versions of a film reflecting on the Greenwich Meridian Line and temporality. </p></div>
-          <div className="art-tech"><p>Edited using Adobe Premiere. Footage shot by me. Costume & script by me.</p></div>
+          <div className="art-description"><p>Screenshots from two versions of a film reflecting on the Greenwich Meridian Line and temporality. Text inspired by the late 18th-century language used in Thomas Pynchon&apos;s book Mason and Dixon. </p></div>
+          <div className="art-tech"><p>Edited using Adobe Premiere. Cinematography, costume and script by Anna Monkman.</p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={line04} alt="screenshot from film 'The Line'"/>
@@ -126,7 +126,7 @@ const Art = () => {
           <h3 className="art-title"><span className="dot art-dot"></span>The Knight, 2017</h3>
           <a className="vimeo-link" href="https://vimeo.com/377506548" target="_blank" rel="noreferrer">Vimeo &gt;</a>
           <div className="art-description"><p>Screenshots from a film I made in my 1st Year at Goldsmiths, University of London.</p></div>
-          <div className="art-tech"><p>Found images collaged together in Adobe Photoshop. Edited with Adobe Premiere and After Effects. Greenscreen footage shot by me. With thanks to Will Herbert as the knight. </p></div>
+          <div className="art-tech"><p>Found images collaged together in Adobe Photoshop. Edited with Adobe Premiere and After Effects. Greenscreen footage shot by Anna Monkman. With thanks to Will Herbert as the knight. </p></div>
         </div>
         <div className="art-gallery-wrapper">
           <img className="art-img" src={knight01} alt="screenshot from film 'The Knight'"/>
@@ -139,7 +139,7 @@ const Art = () => {
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>Boy, 2016</h3>
           <a className="vimeo-link" href="https://vimeo.com/382305597" target="_blank" rel="noreferrer">Vimeo &gt;</a>
-          <div className="art-description"><p>Two oil paitings and looped film based on a found photograph of a boy from late 17th or early 18th century. </p></div>
+          <div className="art-description"><p>Two oil paitings and looped film based on a found photograph of a boy from late 19th or early 20th century. </p></div>
           <div className="art-tech"><p>This work was awarded the Special Judge&apos;s Prize at Wells Art International Contemporary Competition, 2016.  </p></div>
         </div>
         <div className="art-gallery-wrapper">
