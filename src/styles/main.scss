@@ -561,7 +561,7 @@ body {
   }
 }
 
-  @media screen and (max-width: 700px) {
+  @media screen and (max-width: 800px) {
     .home-image {
       width: 100%;
     }
@@ -575,25 +575,25 @@ body {
       display: inline-block;
       z-index: 2;
       p {
-        font-size: 24px;
+        font-size: 30px;
       }
     }
   }
-  @media screen and (max-width: 930px) {
-    .home-info {
-      position: absolute;
-      top: 400px;
-      left: 20px;
-      // margin-top: 150px;
-      // margin-left: 10px;
-      width: 70%;
-      display: inline-block;
-      z-index: 2;
-      p {
-        font-size: 24px;
-      }
-    }
-  }
+  // @media screen and (max-width: 930px) {
+  //   .home-info {
+  //     position: absolute;
+  //     top: 400px;
+  //     left: 20px;
+  //     // margin-top: 150px;
+  //     // margin-left: 10px;
+  //     width: 70%;
+  //     display: inline-block;
+  //     z-index: 2;
+  //     p {
+  //       font-size: 24px;
+  //     }
+  //   }
+  // }
   /** -----------------------------------------------------------------------ABOUT*/
 
   .about-wrapper {
