@@ -49,12 +49,11 @@ const Art = () => {
         <div className="art-info-wrapper">
           <h3 className="art-title"><span className="dot art-dot"></span>Commission for artist Christopher Bond, 2020</h3>
           <div className="art-description">
-            <p>I was commissioned to model an unmade bed with wetness on the covers for a film that Bond is working on.</p>
-            <p>A short description of the work from Christopher Bond: </p>
+            <p>Render for upcoming performance by Christopher Bond in 2022, in which two overlapping super 8 stills from a brief split second in a David Wojnarowicz film have been rendered as an singular object – a sodden bed. This is reference to a text in the collected writings by the Ian White, ‘Here is Infomation. Mobilise’</p>
           </div>
           <div className="art-tech">
             <p>Modelled and Rendered using Blender 2.9.</p>
-            <p> Wet textures modelled with Quixel Mixer. </p>
+            <p>Wet textures modelled with Quixel Mixer. </p>
           </div>
         </div>
         <div className="art-gallery-wrapper">
