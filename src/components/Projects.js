@@ -4,6 +4,7 @@ import proj1mov from '../assets/proj1mov.mp4'
 import proj2mov from '../assets/proj2mov.mp4'
 import proj3mov from '../assets/proj3mov.mp4'
 import proj4mov from '../assets/proj4mov.mp4'
+import riverislandapp from '../assets/riverislandapp02.mp4'
 
 import { FiExternalLink } from 'react-icons/fi'
 import { MdSubdirectoryArrowRight } from 'react-icons/md'
@@ -13,8 +14,39 @@ const Projects = () => {
 
   return (
     <div className="page-wrapper">
+
+      <div className="project-indv-wrapper">
+        <video className="project-video" src={riverislandapp} muted loop playsinline autoPlay></video>
+        <div className="project-info">
+          <div className="proj-info-left">
+            <h3 className="project-title"><span className="dot"></span>Practise fashion App</h3>
+          </div>
+          <div className="proj-links">
+            <p>Individual | 2.5 Days</p>
+          </div>
+          <div className="proj-info-right">
+            <div className="proj-description">
+              <h4 className="proj-mini-heading"><MdSubdirectoryArrowRight size={18} color="black"/>description</h4>
+              <p>Small React app built for mobile phone screens using a fashion API. With search functionality and lazy loading images (react-lazyload package).</p>
+            </div>
+            <div className="proj-tech">
+              <h4 className="proj-mini-heading"><MdSubdirectoryArrowRight size={18} color="black"/>tech</h4>
+              <ul>
+                <li>React (Hooks)</li>
+                <li>JavaScript</li>
+                <li>styled-components</li>
+                <li>Axios</li>
+                <li>Insomnia</li>
+                <li>Figma</li>
+                <li>fashion API</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="projects-intro">
-        <p>Here are the four projects I completed as part of the Software Engineering Immersive Course at General Assembly. I will update with new projects as I complete them.</p>
+        <p>Here are the four projects I completed as part of the Software Engineering Immersive Course at General Assembly.</p>
         <p>The Software Engineering Immersive is a 3 month course focused on front-end, backend and full stack web development, in particular JavaScript and React. I attended daily lectures, stand-ups and completed homework assignments in the evening. I worked in a variety of ways: in groups, individually and pair-coding.</p>
       </div>
 
