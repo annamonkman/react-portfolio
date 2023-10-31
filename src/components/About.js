@@ -8,17 +8,17 @@ import { FaJs } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
 import { FaSass } from 'react-icons/fa'
 import { FaNodeJs } from 'react-icons/fa'
-import { FaPython } from 'react-icons/fa'
-import { SiMongodb } from 'react-icons/si'
-import { SiDjango } from 'react-icons/si'
-import { SiPostgresql } from 'react-icons/si'
-import { FaYarn } from 'react-icons/fa'
-import { FaNpm } from 'react-icons/fa'
-import { DiGit } from 'react-icons/di'
+// import { FaPython } from 'react-icons/fa'
+// import { SiMongodb } from 'react-icons/si'
+// import { SiDjango } from 'react-icons/si'
+// import { SiPostgresql } from 'react-icons/si'
+// import { FaYarn } from 'react-icons/fa'
+// import { FaNpm } from 'react-icons/fa'
+// import { DiGit } from 'react-icons/di'
 import { FaGithub } from 'react-icons/fa'
 import { SiVisualstudiocode } from 'react-icons/si'
 import { SiNetlify } from 'react-icons/si'
-import { SiHeroku } from 'react-icons/si'
+// import { SiHeroku } from 'react-icons/si'
 import { DiPhotoshop } from 'react-icons/di'
 import { SiAdobepremiere } from 'react-icons/si'
 import { SiBlender } from 'react-icons/si'
@@ -38,24 +38,25 @@ const About = () => {
           <div className="bio">
             <div className="bio-p-1">
               <Fade left>
-                <p>I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p>
+                {/* <p>I am Anna, a junior web developer who is passionate about forward thinking design and technology. </p> */}
+                <p>I am a multi-disciplinary creative based in London with experience as a front end web developer and visual artist.</p>
               </Fade>
             </div>
-            <div className="bio-p-2">
+            {/* <div className="bio-p-2">
               <Fade left>
                 <p>I have recently completed a Software Engineering Bootcamp at General Assembly on which I explored front and back-end technologies including HTML, CSS, JavaScript, React Hooks, MongoDB and Django.</p>
               </Fade>
-            </div>
-            <div className="bio-p-3">
+            </div> */}
+            {/* <div className="bio-p-3">
               <Fade left>
                 <p>My journey to code came after completing my Fine Art Degree in 2019. I had enjoyed experimenting with digital software such as Adobe Premiere, Photoshop and Blender to make films, and I wanted to expand my technical skills in another area. I completed a short web development course with Code First Girls and was inspired by the possibilities that were opened up with coding. </p>
               </Fade>
-            </div>
-            <div className="bio-p-4">
+            </div> */}
+            {/* <div className="bio-p-4">
               <Fade left>
                 <p>I am now open for opportunities as a front-end or full-stack web developer in a team or as an individual.</p>
               </Fade>
-            </div>
+            </div> */}
           </div>
         </div>
       
@@ -87,34 +88,34 @@ const About = () => {
                 <FaNodeJs size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Node.JS</div>
               </div>
-              <div className="skill-indv-wrapper">
+              {/* <div className="skill-indv-wrapper">
                 <SiMongodb size={55} color="white" className="icon"/> 
                 <div className="skill-indv-text">MongoDB</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <FaPython size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Python</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <SiDjango size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Django</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <SiPostgresql size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">PostgreSQL</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <FaYarn size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Yarn</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <FaNpm size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Npm</div>
-              </div>
-              <div className="skill-indv-wrapper">
+              </div> */}
+              {/* <div className="skill-indv-wrapper">
                 <DiGit size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Git</div>
-              </div>
+              </div> */}
               <div className="skill-indv-wrapper">
                 <FaGithub size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">GitHub</div>
@@ -127,10 +128,10 @@ const About = () => {
                 <SiNetlify size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Netlify</div>
               </div>
-              <div className="skill-indv-wrapper">
+              {/* <div className="skill-indv-wrapper">
                 <SiHeroku size={55} color="white" className="icon"/>
                 <div className="skill-indv-text">Heroku</div>
-              </div>
+              </div> */}
             </div>
             <div className="frontend-wrapper">
               <div className="skill-indv-wrapper">
@@ -166,6 +167,16 @@ const About = () => {
             <p className="exp-more-info">Please find more information about each role on my <a className="contact-link" href="https://www.linkedin.com/in/anna-monkman/" target="_blank" rel='noreferrer'>LinkedIn.</a></p>
           </div>
           <div className="exp-edu">
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Visitor Assistant in various galleries and museums around London</div><div className="exp-detail">Artisan People</div><div className="exp-detail">Sept 2023 - current</div>
+              </Fade>
+            </div>
+            <div className="exp-edu-indv">
+              <Fade left>
+                <div className="exp-detail">Front End Developer</div><div className="exp-detail">NN4M, a Wunderman Thompson Company</div><div className="exp-detail">Jan 2022 - Aug 2023</div>
+              </Fade>
+            </div>
             <div className="exp-edu-indv">
               <Fade left>
                 <div className="exp-detail">Runner</div><div className="exp-detail">One of Us, London</div><div className="exp-detail">Feb 2020 - Aug 2020</div>
@@ -232,12 +243,6 @@ const About = () => {
             <a className="contact-link" href="https://github.com/annamonkman" target="_blank" rel='noreferrer'>Github</a>
           </div>
         </div>
-        
-
-
-        
-        
-
       </div>
     </div>
   )

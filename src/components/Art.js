@@ -44,6 +44,24 @@ const Art = () => {
   return (
 
     <div className="art-wrapper">
+
+      <div className="art-proj-wrapper">
+        <div className="art-info-wrapper">
+          <h3 className="art-title"><span className="dot art-dot"></span>Texture work for Furtherfield Gallery in collaboration with Studio Hyte, 2022</h3>
+          <a className="vimeo-link" href="https://www.furtherfield.org/based-on-a-tree-story-the-parks-pick-for-summer-2022/" target="_blank" rel="noreferrer">Project Website &gt;</a>
+          <div className="art-description">
+            <p>Added texture and colour to 3D models of &quot;Sprites&quot; for AR art piece taking place in Finsbury Park over Summer 2022.</p>
+          </div>
+          <div className="art-tech">
+            <p>Using Blender and Adobe Photoshop.</p>
+          </div>
+        </div>
+        <div className="art-gallery-wrapper"> 
+          <img className="art-img" src="https://res.cloudinary.com/project-3/image/upload/v1698769888/portfolio23/sprite02_gpuge4.png" alt="image of 3D model of Wet Bed side view"/> 
+          <img className="art-img" src="https://res.cloudinary.com/project-3/image/upload/v1698769884/portfolio23/sprite03_e7drey.png" alt="image of 3D model of Wet Bed side view"/> 
+          <img className="art-img" src="https://res.cloudinary.com/project-3/image/upload/v1698769888/portfolio23/sprite01_sqiahn.png" alt="image of 3D model of Wet Bed side view"/> 
+        </div>  
+      </div>
         
       <div className="art-proj-wrapper">
         <div className="art-info-wrapper">
