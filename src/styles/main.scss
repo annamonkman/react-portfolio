@@ -431,6 +431,8 @@ body {
   .bars {
     display: block;
     background-color: $nav;
+    border: 5px solid $nav;
+    border-radius: 50%;
   }
   .nav-links-container {
     flex-direction: column;

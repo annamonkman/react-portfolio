@@ -25,13 +25,19 @@ const Nav = () => {
   const splitLocation = pathname.split('/')
 
 
-  const [toggleMenu, setToggleMenu] = useState(false)
+  // const [toggleMenu, setToggleMenu] = useState(false)
   // const [toggleBars, setToggleBars] = useState(false)
   const [screenWidth, setScreenWidth] = useState(window.innerWidth)
   // const [isOpen, setOpen] = useState()
+  const [toggleState, setToggleState] = useState(false)
 
-  const toggleNav = () => {
-    setToggleMenu(!toggleMenu)
+
+  // const toggleNav = () => {
+  //   setToggleMenu(!toggleMenu)
+  // }
+
+  const toggle = () => {
+    setToggleState(toggleState === false ? true : false)
   }
 
   useEffect(() => {
@@ -47,32 +53,32 @@ const Nav = () => {
   return (
     <div className="nav-container">
       <div className="nav-links-container">
-        {(toggleMenu || screenWidth > 700) && (
+        {(toggleState || screenWidth > 700) && (
           <>
             <div className={splitLocation[1] === '' ? 'active' : ''}>
-              <Link className="nav-link home-link" to="/">
+              <Link className="nav-link home-link" to="/" onClick={toggle}>
                 Home, 
               </Link>
             </div>
             <div className={splitLocation[1] === 'about' ? 'active' : ''}>
-              <Link className="nav-link" to="/about">
+              <Link className="nav-link" to="/about" onClick={toggle}>
                 About,
               </Link>
             </div>
             <div className={splitLocation[1] === 'projects' ? 'active' : ''}>
-              <Link className="nav-link" to="/projects">
+              <Link className="nav-link" to="/projects" onClick={toggle}>
                 Dev Projects,
               </Link>
             </div>
             <div className={splitLocation[1] === 'art' ? 'active' : ''}>
-              <Link className="nav-link" to="/art">
+              <Link className="nav-link" to="/art" onClick={toggle}>
                 Film & 3D,
               </Link>
             </div>
           </>
           
         )}
-        <AiOutlineMenu size={25} className="bars" onClick={toggleNav}/>
+        <AiOutlineMenu size={25} className="bars" onClick={toggle}/>
       </div>
 
       <div className="dot-home">
