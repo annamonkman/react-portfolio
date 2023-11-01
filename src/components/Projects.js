@@ -16,7 +16,7 @@ const Projects = () => {
     <div className="page-wrapper">
 
       <div className="project-indv-wrapper">
-        <video className="project-video" src={riverislandapp} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={riverislandapp} muted loop playsinline playsInline autoPlay></video>
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Practise fashion App</h3>
@@ -51,7 +51,7 @@ const Projects = () => {
       </div>
 
       <div className="project-indv-wrapper">
-        <video className="project-video" src={proj4mov} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={proj4mov} muted loop playsinline playsInline autoPlay></video>
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Carousel Collective</h3>
@@ -85,7 +85,7 @@ const Projects = () => {
       </div>
 
       <div className="project-indv-wrapper">
-        <video className="project-video" src={proj3mov} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={proj3mov} muted loop playsinline playsInline autoPlay></video>
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Festivalist</h3>
@@ -124,7 +124,7 @@ const Projects = () => {
       </div>
 
       <div className="project-indv-wrapper">
-        <video className="project-video" src={proj2mov} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={proj2mov} muted loop playsinline playsInline autoPlay></video>
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Star Trumps</h3>
@@ -154,7 +154,7 @@ const Projects = () => {
       </div>
 
       <div className="project-indv-wrapper">
-        <video className="project-video" src={proj1mov} muted loop playsinline autoPlay></video>
+        <video className="project-video" src={proj1mov} muted loop playsinline playsInline autoPlay></video>
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Frogger</h3>
