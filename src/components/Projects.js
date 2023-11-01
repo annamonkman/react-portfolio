@@ -20,9 +20,9 @@ const Projects = () => {
         <div className="project-info">
           <div className="proj-info-left">
             <h3 className="project-title"><span className="dot"></span>Practise fashion App</h3>
-          </div>
-          <div className="proj-links">
-            <p>Individual | 2.5 Days</p>
+            <div className="proj-links">
+              <p>Individual | 2.5 Days</p>
+            </div>
           </div>
           <div className="proj-info-right">
             <div className="proj-description">
